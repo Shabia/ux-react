@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import {Jumbotron, Row, Col, Card, CardDeck } from 'react-bootstrap';
+import {Jumbotron, Row, Col, Card, CardDeck, Container } from 'react-bootstrap';
 import profilepic from './assets/profilepic.png'
 import rect from './assets/rect.png'
 
@@ -8,6 +8,7 @@ import rect from './assets/rect.png'
 export const Home = () => (
   <div>
 <Jumbotron>
+  <Container>
       <Row>
           <Col md={8} className="">
             <h1 className="display-4">Shabia</h1>
@@ -20,8 +21,9 @@ export const Home = () => (
           </Col>
             <Col md={4} className="d-flex align-items-center"> <img src={profilepic} className="profile" alt="hp-bg"/> </Col>
       </Row>
+      </Container>
  </Jumbotron>
-
+<Container>
       <Row>
       <CardDeck>
   <Link to="/port/FeatureRequest">
@@ -43,7 +45,7 @@ export const Home = () => (
   
 </CardDeck>
       </Row>
-   
+      </Container>
       </div>
 
 

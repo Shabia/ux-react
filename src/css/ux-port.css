@@ -1,2 +1,75 @@
-@import url("https://use.typekit.net/zae6syr.css");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Montserrat&display=swap");
+.ux-port {
+  background-color: #060F1E;
+  color: #F2F2F2;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.ux-port h1, .ux-port h2, .ux-port h3, .ux-port h4, .ux-port h5, .ux-port h6,
+.ux-port .h1, .ux-port .h2, .ux-port .h3, .ux-port .h4, .ux-port .h5, .ux-port .h6 {
+  font-family: Libre Baskerville, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.ux-port h4, .ux-port h5, .ux-port h6, .ux-port .h4, .ux-port .h5, .ux-port .h6 {
+  text-align: end;
+}
+
+.ux-port a {
+  color: #F2994A;
+}
+
+.ux-port blockquote {
+  font-style: oblique;
+}
+
+.ux-port .card {
+  background-color: transparent;
+}
+
+.ux-port .navbar-brand {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #F2F2F2;
+}
+
+.ux-port .navbar-brand:hover {
+  color: #F2F2F2;
+}
+
+.ux-port .port-hero, .ux-port .jumbotron, .ux-port .blu-gry {
+  background-color: #1A1F28;
+}
+
+.ux-port .title-border {
+  border-left: 3px solid #F2994A;
+  padding-left: 1.2rem;
+}
+
+.ux-port .port-section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.ux-port .sect-row {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.ux-port .justify-content-end {
+  -ms-flex-pack: center !important;
+  -webkit-box-pack: center !important;
+          justify-content: center !important;
+}
+
+.ux-port .justify-content-end {
+  -ms-flex-pack: end !important;
+  -webkit-box-pack: end !important;
+          justify-content: end !important;
+}
 /*# sourceMappingURL=ux-port.css.map */

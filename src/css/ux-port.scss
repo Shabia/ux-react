@@ -1,9 +1,89 @@
 // ux-port.scss
 // Option A: Include all of Bootstrap
-@import url("https://use.typekit.net/zae6syr.css");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Montserrat&display=swap');
 //mine
 
+$bg-color: #060F1E;
+$font-color: #F2F2F2;
+$blu-gry: #1A1F28;
+$orange: #F2994A;
+$body-font: montserrat, sans-serif;
+$title-font: Libre Baskerville, sans-serif;
+$spacer: 1rem;
+
+@mixin base-font {
+    font-family: $body-font;
+    font-style: normal;
+    font-weight: 500;
+}
+
+@mixin h-font {
+    font-family: $title-font;
+    font-style: normal;
+    font-weight: 100;
+}
 //overrides
+.ux-port {
+    background-color: $bg-color;
+    color: $font-color;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    @include base-font();
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6  {
+        @include h-font;
+    }
+    h4,h5, h6, .h4, .h5, .h6 {
+        text-align: end;
+    }
+
+    a {
+        color: $orange;
+    }
+    blockquote {
+        font-style: oblique;
+    }
+    .card {
+        background-color: transparent;
+    }
+
+
+
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 2rem;
+        color: $font-color;
+        &:hover {
+            color: $font-color;
+        }
+    }
+
+    .port-hero, .jumbotron, .blu-gry{
+        background-color: $blu-gry ;
+    }
+
+     .title-border {
+        border-left: 3px solid $orange;
+        padding-left: 1.2rem;
+    }
+
+    .port-section {
+        padding-top: $spacer * 2.5;
+        padding-bottom: $spacer * 2.5;
+    }
+    .sect-row {
+        padding-top: $spacer;
+        padding-bottom: $spacer * 2;
+    }
+    .justify-content-end {
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+    }
+    .justify-content-end{
+        -ms-flex-pack: end!important;
+        justify-content: end!important;
+    }
+}
 
 
 //Bootstrap imports

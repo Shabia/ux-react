@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Nav, Navbar} from 'react-bootstrap';
+import { Container, Nav, Navbar} from 'react-bootstrap';
 
 export const NavigationBar = () => (
   <header className="ux-port-header">
-
-  <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-    <Navbar.Brand href="/">ux-port</Navbar.Brand>
+<Container>
+  <Navbar collapseOnSelect expand="lg">
+    <Navbar.Brand href="/">S.</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
-      <Nav className="justify-content-end" >
+      <Nav className="text-end" >
       <Nav.Item>
             <Nav.Link>
               <Link to="/">Portfolio</Link>
@@ -23,6 +23,6 @@ export const NavigationBar = () => (
       </Nav>
   </Navbar.Collapse>
 </Navbar>
-
+</Container>
  </header>
 )
