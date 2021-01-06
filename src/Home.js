@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import {Jumbotron, Row, Col, Card, CardDeck, Container } from 'react-bootstrap';
 import profilepic from './assets/profilepic.png'
 import rect from './assets/rect.png'
+import proOne from './assets/test-img.png'
+
 
 
 export const Home = () => (
@@ -25,24 +27,67 @@ export const Home = () => (
  </Jumbotron>
 <Container>
       <Row>
-      <CardDeck>
-  <Link to="/port/FeatureRequest">
-    <Card>
-      <Card.Img variant="top" src={rect} />
-      <Card.Body>
-        <Card.Title>Card title</Card.Title>
-        <Card.Text>
-          <Row>
+      <CardDeck className="mb-4">
 
-          </Row>
-        </Card.Text>
+    <Card>
+    <Link to="/port/FeatureRequest">
+     <Card.Img src={rect} />
+     <Card.Body>
+    
+      <Row>
+      <Col md={6} ><Card.Title>Feature Request UI</Card.Title>
+        </Col><Col md={4} ><Card.Text>
+        <small className="text-muted">Web UI - Social</small>
+        </Card.Text></Col>
+      </Row>
       </Card.Body>
-      <Card.Footer>
-        <small className="text-muted">Last updated 3 mins ago</small>
-      </Card.Footer>
+      </Link>
     </Card>
-  </Link>
+    <Card>
+    <Link to="/port/FeatureRequest">
+     <Card.Img src={rect} />
+     <Card.Body>
+    
+      <Row>
+      <Col md={6} ><Card.Title>Feature Request UI</Card.Title>
+        </Col><Col md={4} ><Card.Text>
+        <small className="text-muted">Web UI - Social</small>
+        </Card.Text></Col>
+      </Row>
+      </Card.Body>
+      </Link>
+    </Card>
+</CardDeck>
+<CardDeck>
   
+<Card>
+    <Link to="/port/FeatureRequest">
+     <Card.Img src={rect} />
+     <Card.Body>
+    
+      <Row>
+      <Col md={6} ><Card.Title>Feature Request UI</Card.Title>
+        </Col><Col md={4} ><Card.Text>
+        <small className="text-muted">Web UI - Social</small>
+        </Card.Text></Col>
+      </Row>
+      </Card.Body>
+      </Link>
+    </Card>
+    <Card>
+    <Link to="/port/FeatureRequest">
+     <Card.Img src={rect} />
+     <Card.Body>
+    
+      <Row>
+      <Col md={6} ><Card.Title>Feature Request UI</Card.Title>
+        </Col><Col md={4} ><Card.Text>
+        <small className="text-muted">Web UI - Social</small>
+        </Card.Text></Col>
+      </Row>
+      </Card.Body>
+      </Link>
+    </Card>
 </CardDeck>
       </Row>
       </Container>

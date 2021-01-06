@@ -8,7 +8,7 @@ $font-color: #F2F2F2;
 $blu-gry: #1A1F28;
 $orange: #F2994A;
 $body-font: montserrat, sans-serif;
-$title-font: Libre Baskerville, sans-serif;
+$title-font:montserrat, sans-serif;
 $spacer: 1rem;
 
 @mixin base-font {
@@ -20,7 +20,7 @@ $spacer: 1rem;
 @mixin h-font {
     font-family: $title-font;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 800;
 }
 //overrides
 .ux-port {
@@ -33,9 +33,13 @@ $spacer: 1rem;
     .h1, .h2, .h3, .h4, .h5, .h6  {
         @include h-font;
     }
-    h4,h5, h6, .h4, .h5, .h6 {
-        text-align: end;
+    .sub-section {
+        h4,h5, h6, .h4, .h5, .h6 {
+            text-align: end;
+        }
     }
+
+ 
 
     a {
         color: $orange;
@@ -45,6 +49,9 @@ $spacer: 1rem;
     }
     .card {
         background-color: transparent;
+        a:hover {
+            text-decoration: none;;
+        }
     }
 
 
@@ -57,7 +64,9 @@ $spacer: 1rem;
             color: $font-color;
         }
     }
-
+    .port-hero img {
+        max-height: 300px;
+    }
     .port-hero, .jumbotron, .blu-gry{
         background-color: $blu-gry ;
     }

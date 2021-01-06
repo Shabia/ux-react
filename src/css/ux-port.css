@@ -11,12 +11,12 @@
 
 .ux-port h1, .ux-port h2, .ux-port h3, .ux-port h4, .ux-port h5, .ux-port h6,
 .ux-port .h1, .ux-port .h2, .ux-port .h3, .ux-port .h4, .ux-port .h5, .ux-port .h6 {
-  font-family: Libre Baskerville, sans-serif;
+  font-family: montserrat, sans-serif;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 800;
 }
 
-.ux-port h4, .ux-port h5, .ux-port h6, .ux-port .h4, .ux-port .h5, .ux-port .h6 {
+.ux-port .sub-section h4, .ux-port .sub-section h5, .ux-port .sub-section h6, .ux-port .sub-section .h4, .ux-port .sub-section .h5, .ux-port .sub-section .h6 {
   text-align: end;
 }
 
@@ -32,6 +32,10 @@
   background-color: transparent;
 }
 
+.ux-port .card a:hover {
+  text-decoration: none;
+}
+
 .ux-port .navbar-brand {
   font-weight: 700;
   font-size: 2rem;
@@ -40,6 +44,10 @@
 
 .ux-port .navbar-brand:hover {
   color: #F2F2F2;
+}
+
+.ux-port .port-hero img {
+  max-height: 300px;
 }
 
 .ux-port .port-hero, .ux-port .jumbotron, .ux-port .blu-gry {

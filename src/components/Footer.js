@@ -1,8 +1,10 @@
 import React from 'react';
+import {Jumbotron, Row, Col, Card, CardDeck, Container } from 'react-bootstrap';
 
 
 export const Footer = () => (
-<footer>
-  This is a footer
+<footer><Container>
+  <p>Hand made with ❤️ in React</p>
+  </Container>
 </footer>
 )

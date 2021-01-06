@@ -1,5 +1,11 @@
 import React from 'react'
 import {Row, Nav, Col, Card, CardGroup, Container, Jumbotron} from 'react-bootstrap';
+import { HashLink as Link } from 'react-router-hash-link';
+import heropic from './../assets/test-img.png'
+import twoppl from './../assets/2ppl.png'
+import threeppl from './../assets/3ppl.png'
+
+
 
 
 
@@ -16,12 +22,15 @@ export const FeatureRequest = () => (
             </blockquote>
         
               <Nav defaultActiveKey="/home" className="flex-column">
-                <Nav.Link href="/home">Active</Nav.Link>
-                <Nav.Link eventKey="link-1">Background</Nav.Link>
-                <Nav.Link eventKey="link-2">Link</Nav.Link>
+            
+                <Link to="#background">Background</Link>
+                <Link to="#process">process</Link>
+                <Link to="#outcomes">Outcomes</Link>
               </Nav>
           </Col>
-            <Col md={6} className="d-flex align-items-center"> Image of work </Col>  
+            <Col md={6} className="d-flex align-items-center"> 
+              <img src={heropic} alt="Hero photo" className="img-fluid"/> 
+            </Col>  
     </Row>
     </Container>
     </Jumbotron>
@@ -42,13 +51,6 @@ export const FeatureRequest = () => (
     <p>We’d like to find out what is missing from Topology builder especially from large new types of people such as Cisco sellers, 
       partners and sales engineers, whom is it missing for and why they’d like it. This will help us going forward to design features 
       for new specific groups of users.</p>
-      <p>Designers talked about the features we wanted and how best to capture the info. 
-        We wanted to be basic and give us the info back without having the need to analyse requests.</p>
-        <ul>
-          <li>Organised ideas into buckets - Important/Nice to have/Overkill</li>
-          <li>Reasons for ideas - Why</li>
-          <li>Two user types - admin (us) topolgy users</li>
-        </ul>
     </Col>
     </Row>
     <Row className="sect-row">
@@ -56,30 +58,22 @@ export const FeatureRequest = () => (
     <Col md={9} className="sub-content">
     <CardGroup>
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Img variant="middle" src={twoppl} className="img-fluid" />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>Product Managers, UX Designers</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
+      Look at the reported problems and design the solutions
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
   </Card>
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Img variant="middle" src={threeppl} className="img-fluid" />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>Network &mp; Sales Engineers, Partners + all new user types we don’t know</Card.Title>
       <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
+      Report needs, problems and missing features
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
   </Card>
   </CardGroup>
 
