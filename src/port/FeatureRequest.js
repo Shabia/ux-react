@@ -48,7 +48,7 @@ export const FeatureRequest = () => (
       <p>Repurposing Topology builder for a new user groups who have never used the system before but will need to because of losing their offices 
         to remote work. We have an idea of these user’s day to day activity but to learn better on how to add more user specific features we decided 
         some sort of feedback system is required.</p>
-    <p>We’d like to find out what is missing from Topology builder especially from large new types of people such as Cisco sellers, 
+    <p>`f`ind out what is missing from Topology builder especially from large new types of people such as Cisco sellers, 
       partners and sales engineers, whom is it missing for and why they’d like it. This will help us going forward to design features 
       for new specific groups of users.</p>
     </Col>

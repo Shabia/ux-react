@@ -1,5 +1,5 @@
 import React from 'react';
-import {Jumbotron, Row, Col, Card, CardDeck, Container } from 'react-bootstrap';
+import {Container } from 'react-bootstrap';
 
 
 export const Footer = () => (
