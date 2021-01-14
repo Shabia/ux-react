@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Montserrat&display=swap");
 .ux-port {
-  background-color: #060F1E;
-  color: #F2F2F2;
+  background-color: #e8e8e8;
+  color: #313131;
   line-height: 1.6;
   font-size: 1.1rem;
   font-family: montserrat, sans-serif;
@@ -21,7 +21,7 @@
 }
 
 .ux-port a {
-  color: #F2994A;
+  color: #e53935;
 }
 
 .ux-port blockquote {
@@ -39,23 +39,23 @@
 .ux-port .navbar-brand {
   font-weight: 700;
   font-size: 2rem;
-  color: #F2F2F2;
+  color: #313131;
 }
 
 .ux-port .navbar-brand:hover {
-  color: #F2F2F2;
+  color: #313131;
 }
 
 .ux-port .port-hero img {
   max-height: 300px;
 }
 
-.ux-port .port-hero, .ux-port .jumbotron, .ux-port .blu-gry {
-  background-color: #1A1F28;
+.ux-port .port-hero, .ux-port .jumbotron, .ux-port .bg-contrast {
+  background-color: #e0e2e4;
 }
 
 .ux-port .title-border {
-  border-left: 3px solid #F2994A;
+  border-left: 3px solid #e53935;
   padding-left: 1.2rem;
 }
 

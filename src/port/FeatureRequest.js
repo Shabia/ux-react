@@ -4,6 +4,10 @@ import { HashLink as Link } from 'react-router-hash-link';
 import heropic from './../assets/test-img.png'
 import twoppl from './../assets/2ppl.png'
 import threeppl from './../assets/3ppl.png'
+import frprocess from './../assets/FR-Process.svg'
+import frIdea from './../assets/FR-IdeaBoard.svg'
+import frFlowA from './../assets/FR-Design1Flow.svg'
+import frFlowB from './../assets/FR-Design2Flow.svg'
 
 
 
@@ -24,7 +28,7 @@ export const FeatureRequest = () => (
               <Nav defaultActiveKey="/home" className="flex-column">
             
                 <Link to="#background">Background</Link>
-                <Link to="#process">process</Link>
+                <Link to="#Design">Design</Link>
                 <Link to="#outcomes">Outcomes</Link>
               </Nav>
           </Col>
@@ -36,8 +40,11 @@ export const FeatureRequest = () => (
     </Jumbotron>
  </section>
  <Container>
- <section className="work-overview" >
-
+ <section className="port-section" >
+ <h2 className="text-center">Process</h2>
+ <div className="text-center">
+ <img src={frprocess} alt="Process" className="img-fluid"/> 
+ </div>
  </section>
 
  <section className="port-section" id="background">
@@ -82,7 +89,7 @@ export const FeatureRequest = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Team &amp; Tools</h3></Col>
     <Col md={9} className="sub-content">
-      <Card className="p-5 blu-gry">
+      <Card className="p-5 bg-contrast">
         <Row>
           <Col md={6}>
           <dl>
@@ -128,8 +135,8 @@ export const FeatureRequest = () => (
     </Row>
  </section>
 
- <section className="port-section" id="process" >
- <h2 className="text-center">Process</h2>
+ <section className="port-section" id="design" >
+ <h2 className="text-center">Design</h2>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Idea Generation</h3></Col>
     <Col md={8} className="sub-content">
@@ -140,19 +147,23 @@ export const FeatureRequest = () => (
           <li>Reasons for ideas - Why</li>
           <li>Two user types - admin (us) topolgy users</li>
         </ul>
+        <img src={frIdea} alt="Feature Request Ideas Board" className="img-fluid"/> 
     </Col>
     </Row>
-    <Row className="sect-row">
+   {/* <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Feature mapping &amp; user flow</h3></Col>
-    <Col md={8} className="sub-content">
-      
+    <Col md={8} className="sub-content"> 
     </Col>
-    </Row>
+</Row>*/}
     <h3 className="title-border">Prototyping</h3>
  
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>User view Design 1</h4></Col>
-    <Col md={8} className="sub-content"><p>First basic pass to get the minimal features in</p></Col>
+    <Col md={8} className="sub-content"> <img src={frFlowA} alt="Flow A" className="img-fluid"/> 
+      <p>Flow diagram with basic required features</p>
+      <p>Sketched Iteration</p>
+      </Col>
+      
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h5>Thoughts &amp; discussion</h5></Col>
@@ -163,7 +174,11 @@ export const FeatureRequest = () => (
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>User view Design 2</h4></Col>
-    <Col md={8} className="sub-content"><p>First basic pass to get the minimal features in</p></Col>
+    <Col md={8} className="sub-content">
+    <img src={frFlowB} alt="Flow B" className="img-fluid"/> 
+      <p>Second pass with additional features</p>
+
+      <p>Sketched iteration</p></Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h5>Thoughts &amp; discussion</h5></Col>

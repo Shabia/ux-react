@@ -3,10 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Montserrat&display=swap');
 //mine
 
-$bg-color: #060F1E;
-$font-color: #F2F2F2;
+$bg-color: #e8e8e8;
+$font-color: #313131;
 $blu-gry: #1A1F28;
+
 $orange: #F2994A;
+$bg-contrast: #e0e2e4;
+$alink: #e53935;
 $body-font: montserrat, sans-serif;
 $title-font:montserrat, sans-serif;
 $spacer: 1rem;
@@ -42,7 +45,7 @@ $spacer: 1rem;
  
 
     a {
-        color: $orange;
+        color: $alink;
     }
     blockquote {
         font-style: oblique;
@@ -67,12 +70,12 @@ $spacer: 1rem;
     .port-hero img {
         max-height: 300px;
     }
-    .port-hero, .jumbotron, .blu-gry{
-        background-color: $blu-gry ;
+    .port-hero, .jumbotron, .bg-contrast{
+        background-color: $bg-contrast ;
     }
 
      .title-border {
-        border-left: 3px solid $orange;
+        border-left: 3px solid $alink;
         padding-left: 1.2rem;
     }
 
