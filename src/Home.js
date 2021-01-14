@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {Jumbotron, Row, Col, Card, CardDeck, Container } from 'react-bootstrap';
 import profilepic from './assets/profilepic.png'
 import rect from './assets/rect.png'
-import proOne from './assets/test-img.png'
+
 
 
 
