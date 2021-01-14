@@ -33,7 +33,7 @@ export const FeatureRequest = () => (
               </Nav>
           </Col>
             <Col md={6} className="d-flex align-items-center"> 
-              <img src={heropic} alt="Hero photo" className="img-fluid"/> 
+              <img src={heropic} alt="Desciption of this" className="img-fluid"/> 
             </Col>  
     </Row>
     </Container>
