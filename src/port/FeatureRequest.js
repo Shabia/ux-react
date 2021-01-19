@@ -8,6 +8,20 @@ import frprocess from './../assets/FR-Process.svg'
 import frIdea from './../assets/FR-IdeaBoard.svg'
 import frFlowA from './../assets/FR-Design1Flow.svg'
 import frFlowB from './../assets/FR-Design2Flow.svg'
+import frwirea from './../assets/FR-Wire1.svg'
+import frwireba from './../assets/FR-Wire2A.svg'
+import frwirebb from './../assets/FR-Wire2B.svg'
+import frwirebc from './../assets/FR-Wire2C.svg'
+import frdrawone from './../assets/FR-Draw1.svg'
+import frwdrawtwo from './../assets/FR-Draw2.svg'
+import frnewreq from './../assets/FR-NewRequest.gif'
+import frupvote from './../assets/FR-UpVote.gif'
+import frreadcomment from './../assets/FR-ReadComment.gif'
+import fraddcomment from './../assets/FR-AddComment.gif'
+import frreplycomment from './../assets/FR-ReplyComment.gif'
+
+
+
 
 
 
@@ -28,7 +42,7 @@ export const FeatureRequest = () => (
               <Nav defaultActiveKey="/home" className="flex-column">
             
                 <Link to="#background">Background</Link>
-                <Link to="#Design">Design</Link>
+                <Link to="#design">Design</Link>
                 <Link to="#outcomes">Outcomes</Link>
               </Nav>
           </Col>
@@ -161,7 +175,10 @@ export const FeatureRequest = () => (
     <Col md={3} className="sub-section"><h4>User view Design 1</h4></Col>
     <Col md={8} className="sub-content"> <img src={frFlowA} alt="Flow A" className="img-fluid"/> 
       <p>Flow diagram with basic required features</p>
+      <img src={frdrawone} alt="hand drawn sketch one" className="img-fluid"/> 
       <p>Sketched Iteration</p>
+      <img src={frwirea} alt="Wireframe design of first iteration" className="img-fluid"/> 
+      <p>Wireframe</p>
       </Col>
       
     </Row>
@@ -177,8 +194,17 @@ export const FeatureRequest = () => (
     <Col md={8} className="sub-content">
     <img src={frFlowB} alt="Flow B" className="img-fluid"/> 
       <p>Second pass with additional features</p>
+      <img src={frwdrawtwo} alt="hand drawn sketch two" className="img-fluid"/> 
+      <p>Sketched page, request form modal, comment/reply idea, request card info</p>
+      <strong>Landing Page</strong>
+      <img src={frwireba} alt="Wireframe design of second iteration - landing page" className="img-fluid"/> 
+      <strong>Submit request modal</strong>
+      <img src={frwirebc} alt="Wireframe design of second iteration"/> 
+      <strong>Commenting and Replying</strong>
+      <img src={frwirebb} alt="Wireframe design of second iteration" className="img-fluid"/> 
 
-      <p>Sketched iteration</p></Col>
+      <p>Wireframes of second desigsn</p>
+      </Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h5>Thoughts &amp; discussion</h5></Col>
@@ -189,8 +215,29 @@ export const FeatureRequest = () => (
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Visual UI</h3></Col>
-    <Col md={8} className="sub-content">Cisco UI Kit
-        Fit into Topology Builder UI</Col>
+    <Col md={8} className="sub-content">
+      Visuals designed using:
+      <ul>
+        <li>Cisco UI Kit - as a base</li>
+        <li>Topology Builder UI design - design language for this suite of products that we previously designed</li>
+        </ul>
+       
+        <h5 className="my-4">New Request</h5>
+        <img src={frnewreq} alt="Create a new request" className="img-fluid mb-2 ux-gif"/> 
+        <h5 className="my-4">Upvote</h5>
+        <img src={frupvote} alt="Upvote a request" className="img-fluid mb-2 ux-gif"/> 
+        <h5 className="my-4">Read Comments</h5>
+        <img src={frreadcomment} alt="Read Comments" className="img-fluid mb-2 ux-gif"/> 
+        <h5 className="my-4">Add Comment</h5>
+        <img src={fraddcomment} alt="Add Comment" className="img-fluid mb-2 ux-gif"/> 
+        <h5 className="my-4">Reply to Comment</h5>
+        <img src={frreplycomment} alt="Reply to Comment" className="img-fluid mb-2 ux-gif"/> 
+   
+   
+        <div>
+    </div>
+        
+        </Col>
     </Row>
  </section>
 
