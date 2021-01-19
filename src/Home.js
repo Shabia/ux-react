@@ -3,8 +3,12 @@ import { Link } from 'react-router-dom';
 import {Jumbotron, Row, Col, Card, CardDeck, Container } from 'react-bootstrap';
 import profilepic from './assets/profilepic.png'
 import rect from './assets/rect.png'
-
-
+import il from './assets/IL.svg'
+import fr from './assets/FR.svg'
+import sc from './assets/SC.svg'
+import tb from './assets/TB.svg'
+import cb from './assets/CB.svg'
+import dc from './assets/DC.svg'
 
 
 export const Home = () => (
@@ -12,7 +16,7 @@ export const Home = () => (
 <Jumbotron>
   <Container>
       <Row>
-          <Col md={8} className="">
+          <Col lg={8} className="">
             <h1 className="display-4">Shabia</h1>
             <h1 className="display-6">UX Product Designer</h1>
               <p className="lead">
@@ -21,23 +25,23 @@ export const Home = () => (
               Currently based in London open to roam 
               </p>
           </Col>
-            <Col md={4} className="d-flex align-items-center"> <img src={profilepic} className="profile" alt="hp-bg"/> </Col>
+            <Col lg={4} className="d-flex align-items-center"> <img src={profilepic} className="profile" alt="hp-bg"/> </Col>
       </Row>
       </Container>
  </Jumbotron>
 <Container>
-      <Row>
+     
       <CardDeck className="mb-4">
 
     <Card>
     <Link to="/port/FeatureRequest">
-     <Card.Img src={rect} />
+     <Card.Img src={tb} className="hp-card-img"/>
      <Card.Body>
     
       <Row>
-      <Col md={6} ><Card.Title>Feature Request UI</Card.Title>
-        </Col><Col md={4} ><Card.Text>
-        <small className="text-muted">Web UI - Social</small>
+      <Col lg={5} ><Card.Title>Topology Builder</Card.Title>
+        </Col><Col lg={7} ><Card.Text>
+        <small className="text-muted">Software App - Computer Networking</small>
         </Card.Text></Col>
       </Row>
       </Card.Body>
@@ -45,13 +49,44 @@ export const Home = () => (
     </Card>
     <Card>
     <Link to="/port/FeatureRequest">
-     <Card.Img src={rect} />
+     <Card.Img src={cb} className="hp-card-img"/>
      <Card.Body>
     
       <Row>
-      <Col md={6} ><Card.Title>Feature Request UI</Card.Title>
-        </Col><Col md={4} ><Card.Text>
-        <small className="text-muted">Web UI - Social</small>
+      <Col lg={7} ><Card.Title>dCloud Assistant</Card.Title>
+        </Col><Col lg={5} ><Card.Text>
+        <small className="text-muted">Mobile App - Chat/Voice</small>
+        </Card.Text></Col>
+      </Row>
+      </Card.Body>
+      </Link>
+    </Card>
+</CardDeck>
+<CardDeck className="mb-4">
+  
+<Card>
+    <Link to="/port/FeatureRequest">
+     <Card.Img src={sc}  alt="feature request" className="hp-card-img"/>
+     <Card.Body>
+    
+      <Row>
+      <Col lg={7} ><Card.Title>Scheduling</Card.Title>
+        </Col><Col lg={5} ><Card.Text>
+        <small className="text-muted">Mobile App - Booking Calendar</small>
+        </Card.Text></Col>
+      </Row>
+      </Card.Body>
+      </Link>
+    </Card>
+    <Card>
+    <Link to="/port/FeatureRequest">
+     <Card.Img src={il} className="hp-card-img"/>
+     <Card.Body>
+    
+      <Row>
+      <Col lg={7} ><Card.Title>Icon Library</Card.Title>
+        </Col><Col lg={5} ><Card.Text>
+        <small className="text-muted">Web UI - Asset Management</small>
         </Card.Text></Col>
       </Row>
       </Card.Body>
@@ -62,12 +97,12 @@ export const Home = () => (
   
 <Card>
     <Link to="/port/FeatureRequest">
-     <Card.Img src={rect} />
+     <Card.Img src={fr} className="hp-card-img" />
      <Card.Body>
     
       <Row>
-      <Col md={6} ><Card.Title>Feature Request UI</Card.Title>
-        </Col><Col md={4} ><Card.Text>
+      <Col lg={7} ><Card.Title>Feature Request UI</Card.Title>
+        </Col><Col lg={5} ><Card.Text>
         <small className="text-muted">Web UI - Social</small>
         </Card.Text></Col>
       </Row>
@@ -76,20 +111,20 @@ export const Home = () => (
     </Card>
     <Card>
     <Link to="/port/FeatureRequest">
-     <Card.Img src={rect} />
+     <Card.Img src={dc} className="hp-card-img" />
      <Card.Body>
     
       <Row>
-      <Col md={6} ><Card.Title>Feature Request UI</Card.Title>
-        </Col><Col md={4} ><Card.Text>
-        <small className="text-muted">Web UI - Social</small>
+      <Col lg={7} ><Card.Title>Documentation</Card.Title>
+        </Col><Col lg={5} ><Card.Text>
+        <small className="text-muted">Web UI - Technical Help</small>
         </Card.Text></Col>
       </Row>
       </Card.Body>
       </Link>
     </Card>
 </CardDeck>
-      </Row>
+     
       </Container>
       </div>
 

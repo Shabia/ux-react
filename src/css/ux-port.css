@@ -80,4 +80,13 @@
   -webkit-box-pack: end !important;
           justify-content: end !important;
 }
+
+.ux-port .hp-card-img {
+  max-width: 520px;
+  background-color: #f3f3f3;
+}
+
+.ux-port .hp-card-img:hover {
+  background-color: #e0e2e4;
+}
 /*# sourceMappingURL=ux-port.css.map */

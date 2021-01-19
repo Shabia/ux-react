@@ -19,13 +19,7 @@ import frupvote from './../assets/FR-UpVote.gif'
 import frreadcomment from './../assets/FR-ReadComment.gif'
 import fraddcomment from './../assets/FR-AddComment.gif'
 import frreplycomment from './../assets/FR-ReplyComment.gif'
-
-
-
-
-
-
-
+import fr from './../assets/FR.svg'
 
 export const FeatureRequest = () => (
   <div>
@@ -47,7 +41,7 @@ export const FeatureRequest = () => (
               </Nav>
           </Col>
             <Col md={6} className="d-flex align-items-center"> 
-              <img src={heropic} alt="Desciption of this" className="img-fluid"/> 
+              <img src={fr} alt="Feature request illustration" className="img-fluid"/> 
             </Col>  
     </Row>
     </Container>
