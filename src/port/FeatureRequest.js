@@ -1,7 +1,6 @@
 import React from 'react'
 import {Row, Nav, Col, Card, CardGroup, Container, Jumbotron} from 'react-bootstrap';
 import { HashLink as Link } from 'react-router-hash-link';
-import heropic from './../assets/test-img.png'
 import twoppl from './../assets/2ppl.png'
 import threeppl from './../assets/3ppl.png'
 import frprocess from './../assets/FR-Process.svg'
