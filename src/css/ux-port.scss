@@ -10,7 +10,7 @@ $blu-gry: #1A1F28;
 $orange: #F2994A;
 $bg-contrast: #e0e2e4;
 $alink: #e53935;
-$offwhite: #f3f3f3;
+$offwhite: #fbfbfb;
 $body-font: montserrat, sans-serif;
 $title-font:montserrat, sans-serif;
 $spacer: 1rem;
@@ -97,7 +97,7 @@ $spacer: 1rem;
         justify-content: end!important;
     }
     .hp-card-img {
-        max-width: 520px;
+        //max-width: 520px;
         background-color: $offwhite;
         &:hover {
             background-color: $bg-contrast;

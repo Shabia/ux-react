@@ -72,7 +72,9 @@ export const FeatureRequest = () => (
     <Col md={9} className="sub-content">
     <CardGroup>
   <Card>
-    <Card.Img variant="middle" src={twoppl} className="img-fluid" />
+    <div className="text-center">
+      <Card.Img variant="middle" src={twoppl} className="img-fluid" />
+    </div>
     <Card.Body>
       <Card.Title>Product Managers, UX Designers</Card.Title>
       <Card.Text>
@@ -81,7 +83,9 @@ export const FeatureRequest = () => (
     </Card.Body>
   </Card>
   <Card>
+  <div className="text-center">
     <Card.Img variant="middle" src={threeppl} className="img-fluid" />
+    </div>
     <Card.Body>
       <Card.Title>Network &mp; Sales Engineers, Partners + all new user types we don’t know</Card.Title>
       <Card.Text>
@@ -166,12 +170,14 @@ export const FeatureRequest = () => (
  
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>User view Design 1</h4></Col>
-    <Col md={8} className="sub-content"> <img src={frFlowA} alt="Flow A" className="img-fluid"/> 
-      <p>Flow diagram with basic required features</p>
+    <Col md={8} className="sub-content"> 
+    <h6 className="mb-3">Flow diagram with basic required features</h6>
+    <img src={frFlowA} alt="Flow A" className="img-fluid"/> 
+    <h6 className="mb-3 mt-5">Sketched Iteration</h6>
       <img src={frdrawone} alt="hand drawn sketch one" className="img-fluid"/> 
-      <p>Sketched Iteration</p>
+      <h6 className="mb-3 mt-5">Wireframe</h6>
       <img src={frwirea} alt="Wireframe design of first iteration" className="img-fluid"/> 
-      <p>Wireframe</p>
+     
       </Col>
       
     </Row>
@@ -185,18 +191,19 @@ export const FeatureRequest = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>User view Design 2</h4></Col>
     <Col md={8} className="sub-content">
+    <h6 className="mb-3">Second pass with additional features</h6>
     <img src={frFlowB} alt="Flow B" className="img-fluid"/> 
-      <p>Second pass with additional features</p>
+    <h6 className="mb-3 mt-5">Sketched page, request form modal, comment/reply idea, request card info</h6>
       <img src={frwdrawtwo} alt="hand drawn sketch two" className="img-fluid"/> 
-      <p>Sketched page, request form modal, comment/reply idea, request card info</p>
-      <strong>Landing Page</strong>
+      <h5 className="mb-3 mt-5">Wireframes of second designs</h5>
+      <h6 className="mb-3">Landing Page</h6>
       <img src={frwireba} alt="Wireframe design of second iteration - landing page" className="img-fluid"/> 
-      <strong>Submit request modal</strong>
+      <h6 className="mb-3 mt-5">Submit request modal</h6>
       <img src={frwirebc} alt="Wireframe design of second iteration"/> 
-      <strong>Commenting and Replying</strong>
+      <h6 className="mb-3 mt-5">Commenting and Replying</h6>
       <img src={frwirebb} alt="Wireframe design of second iteration" className="img-fluid"/> 
 
-      <p>Wireframes of second desigsn</p>
+      
       </Col>
     </Row>
     <Row className="sect-row">
@@ -215,15 +222,15 @@ export const FeatureRequest = () => (
         <li>Topology Builder UI design - design language for this suite of products that we previously designed</li>
         </ul>
        
-        <h5 className="my-4">New Request</h5>
+        <h6 className="mb-3">New Request</h6>
         <img src={frnewreq} alt="Create a new request" className="img-fluid mb-2 ux-gif"/> 
-        <h5 className="my-4">Upvote</h5>
+        <h6 className="mb-3 mt-5">Upvote</h6>
         <img src={frupvote} alt="Upvote a request" className="img-fluid mb-2 ux-gif"/> 
-        <h5 className="my-4">Read Comments</h5>
+        <h6 className="mb-3 mt-5">Read Comments</h6>
         <img src={frreadcomment} alt="Read Comments" className="img-fluid mb-2 ux-gif"/> 
-        <h5 className="my-4">Add Comment</h5>
+        <h6 className="mb-3 mt-5">Add Comment</h6>
         <img src={fraddcomment} alt="Add Comment" className="img-fluid mb-2 ux-gif"/> 
-        <h5 className="my-4">Reply to Comment</h5>
+        <h6 className="mb-3 mt-5">Reply to Comment</h6>
         <img src={frreplycomment} alt="Reply to Comment" className="img-fluid mb-2 ux-gif"/> 
    
    
