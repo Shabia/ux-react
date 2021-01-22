@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row, Nav, Col, Card, CardGroup, Container, Jumbotron} from 'react-bootstrap';
+import {Row, Nav, Col, Card, CardGroup, Container} from 'react-bootstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 import twoppl from './../assets/2ppl.png'
 import threeppl from './../assets/3ppl.png'
