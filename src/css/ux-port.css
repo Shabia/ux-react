@@ -6,12 +6,12 @@
   font-size: 1.1rem;
   font-family: montserrat, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .ux-port h1, .ux-port h2, .ux-port h3, .ux-port h4, .ux-port h5, .ux-port h6,
 .ux-port .h1, .ux-port .h2, .ux-port .h3, .ux-port .h4, .ux-port .h5, .ux-port .h6 {
-  font-family: montserrat, sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-style: normal;
   font-weight: 800;
 }
@@ -36,9 +36,18 @@
   text-decoration: none;
 }
 
+.ux-port footer {
+  background-color: #e0e2e4;
+}
+
+.ux-port .navbar {
+  font-family: "Libre Baskerville", serif;
+  font-style: normal;
+  font-weight: 800;
+}
+
 .ux-port .navbar-brand {
-  font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #313131;
 }
 
@@ -87,5 +96,23 @@
 
 .ux-port .hp-card-img:hover {
   background-color: #e0e2e4;
+}
+
+.ux-port .fr {
+  background: url(../assets/FR.svg) no-repeat;
+  background-position: right;
+}
+
+.ux-port .profile {
+  height: 300px;
+  border-radius: 100%;
+}
+
+.ux-port dd {
+  font-weight: 100;
+}
+
+.ux-port dt {
+  font-weight: 900;
 }
 /*# sourceMappingURL=ux-port.css.map */

@@ -23,10 +23,10 @@ import fr from './../assets/FR.svg'
 export const FeatureRequest = () => (
   <div>
 <section className="port-hero">
-  <Jumbotron>
+  
   <Container>
     <Row >
-    <Col md={6} className="">
+    <Col md={6} className="py-5">
             <h1 className="display-6">Feature Request UI</h1>
             <blockquote class="blockquote title-border my-4">
               <p>A feature request system to capture user needs, feedback and determine the most popular requests.</p>
@@ -40,11 +40,11 @@ export const FeatureRequest = () => (
               </Nav>
           </Col>
             <Col md={6} className="d-flex align-items-center"> 
-              <img src={fr} alt="Feature request illustration" className="img-fluid"/> 
+             <img src={fr} alt="Feature request illustration" className="img-fluid"/>
             </Col>  
     </Row>
     </Container>
-    </Jumbotron>
+  
  </section>
  <Container>
  <section className="port-section" >
@@ -214,9 +214,9 @@ export const FeatureRequest = () => (
         A way to show we are working on the submissions - keeps customers engaged and happy</p></Col>
     </Row>
     <Row className="sect-row">
-    <Col md={3} className="sub-section"><h3 className="title-border">Visual UI</h3></Col>
+    <Col md={3} className="sub-section"><h3 className="title-border">Interactions &amp; Visuals</h3></Col>
     <Col md={8} className="sub-content">
-      Visuals designed using:
+      Visuals designed in Figma using:
       <ul>
         <li>Cisco UI Kit - as a base</li>
         <li>Topology Builder UI design - design language for this suite of products that we previously designed</li>

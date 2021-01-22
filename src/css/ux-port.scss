@@ -12,13 +12,13 @@ $bg-contrast: #e0e2e4;
 $alink: #e53935;
 $offwhite: #fbfbfb;
 $body-font: montserrat, sans-serif;
-$title-font:montserrat, sans-serif;
+$title-font:'Libre Baskerville', serif;
 $spacer: 1rem;
 
 @mixin base-font {
     font-family: $body-font;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 @mixin h-font {
@@ -37,12 +37,13 @@ $spacer: 1rem;
     .h1, .h2, .h3, .h4, .h5, .h6  {
         @include h-font;
     }
-    .sub-section {
-        h4,h5, h6, .h4, .h5, .h6 {
-            text-align: end;
+ 
+        .sub-section {
+            h4,h5, h6, .h4, .h5, .h6 {
+                text-align: end;
+            }
         }
-    }
-
+  
  
 
     a {
@@ -58,11 +59,15 @@ $spacer: 1rem;
         }
     }
 
-
-
+    footer {
+        background-color: $bg-contrast;
+    }
+    .navbar {
+        @include h-font;
+    }
     .navbar-brand {
-        font-weight: 700;
-        font-size: 2rem;
+        //font-weight: 700;
+        font-size: 2.5rem;
         color: $font-color;
         &:hover {
             color: $font-color;
@@ -103,6 +108,19 @@ $spacer: 1rem;
             background-color: $bg-contrast;
         }
     }
+
+    .fr {
+       background: url(../assets/FR.svg) no-repeat;
+        background-position: right;
+
+    }
+    .profile {
+        height: 300px;
+        border-radius: 100%;
+    }
+
+    dd { font-weight: 100;}
+    dt { font-weight: 900;}
 }
 
 

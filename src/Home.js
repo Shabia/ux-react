@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import {Jumbotron, Row, Col, Card, CardDeck, Container } from 'react-bootstrap';
-import profilepic from './assets/profilepic.png'
+
+import selfie from './assets/selfie.jpg'
 import il from './assets/IL.svg'
 import fr from './assets/FR.svg'
 import sc from './assets/SC.svg'
@@ -24,7 +25,8 @@ export const Home = () => (
               Currently based in London open to roam 
               </p>
           </Col>
-            <Col lg={4} className="d-flex align-items-center"> <img src={profilepic} className="profile" alt="hp-bg"/> </Col>
+            <Col lg={4} className="d-flex align-items-center"> <img src={selfie} className="profile" alt="hp-bg" roundedCircle/> 
+           </Col>
       </Row>
       </Container>
  </Jumbotron>
@@ -69,8 +71,8 @@ export const Home = () => (
      <Card.Body>
     
       <Row>
-      <Col lg={7} ><Card.Title>Scheduling</Card.Title>
-        </Col><Col lg={5} ><Card.Text>
+      <Col lg={5} ><Card.Title>Scheduling</Card.Title>
+        </Col><Col lg={7} ><Card.Text>
         <small className="text-muted">Mobile App - Booking Calendar</small>
         </Card.Text></Col>
       </Row>
@@ -83,9 +85,9 @@ export const Home = () => (
      <Card.Body>
     
       <Row>
-      <Col lg={7} ><Card.Title>Icon Library</Card.Title>
-        </Col><Col lg={5} ><Card.Text>
-        <small className="text-muted">Web UI - Asset Management</small>
+      <Col lg={5} ><Card.Title>Icon Library</Card.Title>
+        </Col><Col lg={7} ><Card.Text>
+        <small className="text-muted text-right">Web UI - Asset Management</small>
         </Card.Text></Col>
       </Row>
       </Card.Body>
