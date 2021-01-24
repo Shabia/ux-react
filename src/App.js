@@ -7,7 +7,7 @@ import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
 import { Footer } from './components/Footer';
 import { FeatureRequest } from './port/FeatureRequest';
-
+import { TopologyBuilder } from './port/TopologyBuilder';
 
 class App extends Component {
   render() {
@@ -21,6 +21,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/port/FeatureRequest" component={FeatureRequest} />
+              <Route path="/port/TopologyBuilder" component={TopologyBuilder} />
               <Route component={NoMatch} />
             </Switch>
           </Layout>

@@ -1,9 +1,8 @@
 import React from 'react'
 import {Row, Nav, Col, Card, CardGroup, Container} from 'react-bootstrap';
 import { HashLink as Link } from 'react-router-hash-link';
-import twoppl from './../assets/2ppl.png'
-import threeppl from './../assets/3ppl.png'
-import frprocess from './../assets/FR-Process.svg'
+import fiveppl from './../assets/5ppl.png'
+import tbprocess from './../assets/TB-Process.svg'
 import frIdea from './../assets/FR-IdeaBoard.svg'
 import frFlowA from './../assets/FR-Design1Flow.svg'
 import frFlowB from './../assets/FR-Design2Flow.svg'
@@ -18,18 +17,18 @@ import frupvote from './../assets/FR-UpVote.gif'
 import frreadcomment from './../assets/FR-ReadComment.gif'
 import fraddcomment from './../assets/FR-AddComment.gif'
 import frreplycomment from './../assets/FR-ReplyComment.gif'
-import fr from './../assets/FR.svg'
+import tb from './../assets/TB.svg'
 
-export const FeatureRequest = () => (
+export const TopologyBuilder = () => (
   <div>
 <section className="port-hero">
   
   <Container>
     <Row >
     <Col md={6} className="py-5">
-            <h1 className="display-6">Feature Request UI</h1>
+            <h1 className="display-6">Topology Builder</h1>
             <blockquote class="blockquote title-border my-4">
-              <p>A feature request system to capture user needs, feedback and determine the most popular requests.</p>
+              <p>Desktop app for designing and creating cloud hosted Cisco network maps and solutions</p>
             </blockquote>
         
               <Nav defaultActiveKey="/home" className="flex-column">
@@ -40,7 +39,7 @@ export const FeatureRequest = () => (
               </Nav>
           </Col>
             <Col md={6} className="d-flex align-items-center"> 
-             <img src={fr} alt="Feature request illustration" className="img-fluid"/>
+             <img src={tb} alt="Feature request illustration" className="img-fluid"/>
             </Col>  
     </Row>
     </Container>
@@ -50,7 +49,7 @@ export const FeatureRequest = () => (
  <section className="port-section" >
  <h2 className="text-center">Process</h2>
  <div className="text-center">
- <img src={frprocess} alt="Process" className="img-fluid"/> 
+ <img src={tbprocess} alt="Process" className="img-fluid"/> 
  </div>
  </section>
 
@@ -59,13 +58,20 @@ export const FeatureRequest = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Problem</h3></Col>
     <Col md={8} className="sub-content">
-    <p>Repurposing Topology builder for a new user groups who have never used the system before but will need to because of losing their offices 
-        to remote work. We have an idea of these user’s day to day activity but to learn better on how to add more user specific features we decided 
-        some sort of feedback system is required.</p>
-    <p>`Find out what is missing from Topology builder especially from large new types of people such as Cisco sellers, 
-      partners and sales engineers, whom is it missing for and why they’d like it. This will help us going forward to design features 
-      for new specific groups of users.</p>
+  
+      <p>The current version of Topology builder was built on the fly with programmers and demo developers with no UX or further 
+        use cases involved. The goal then was to make a tool for demo developers but now with the world going remote and more people 
+        relying on designing solutions remotely we need to quickly redesign Topology builder and include new features for new types of users.  </p>
 
+        <h4 className="mt-4 mb-3">Redesign Topology builder </h4>
+        <ol>
+          <li>Get to feature parity with v1</li>
+          <li>Make it more user friendly by solving common user problems</li>
+          <li>Complex diagrams need to be easily visualised </li>
+          <li>Ability to see full picture including external entities </li>
+          <li>For a complete diagram need to draw non functioning objects</li>
+          <li>On board new user types</li>
+        </ol>
     </Col>
     </Row>
     <Row className="sect-row">
@@ -74,26 +80,17 @@ export const FeatureRequest = () => (
     <CardGroup>
   <Card>
     <div className="text-center">
-      <Card.Img variant="middle" src={twoppl} className="img-fluid" />
+      <Card.Img variant="middle" src={fiveppl} className="img-fluid" />
     </div>
-    <Card.Body>
-      <Card.Title>Product Managers, UX Designers</Card.Title>
+    <Card.Body className="text-center">
+      <Card.Title>dCloud Operations, Admins, Demo Developers,  Lab Builders, System Engineers
+ </Card.Title>
       <Card.Text>
       Look at the reported problems and design the solutions
       </Card.Text>
     </Card.Body>
   </Card>
-  <Card>
-  <div className="text-center">
-    <Card.Img variant="middle" src={threeppl} className="img-fluid" />
-    </div>
-    <Card.Body>
-      <Card.Title>Network &mp; Sales Engineers, Partners + all new user types we don’t know</Card.Title>
-      <Card.Text>
-      Report needs, problems and missing features
-      </Card.Text>
-    </Card.Body>
-  </Card>
+
   </CardGroup>
 
     </Col>
@@ -106,7 +103,7 @@ export const FeatureRequest = () => (
           <Col md={6}>
           <dl>
             <dt>Role</dt>
-            <dd>UX Designer</dd>
+            <dd>Lead UX Designer - logical diagram/drawing view</dd>
           </dl>
           </Col>
           <Col md={6}>
@@ -120,8 +117,9 @@ export const FeatureRequest = () => (
           <Col md={6}>
           <dl>
             <dt>Team &amp; Collaborators</dt>
-            <dd>Antony - UUX Design</dd>
+            <dd>Antony - Lead UX Design - Table config view</dd>
             <dd>Fadzie - Product Mangement</dd>
+            <dd>Barry - Project Mangement</dd>
           </dl>
           </Col>
           <Col md={6}>
@@ -130,6 +128,7 @@ export const FeatureRequest = () => (
             <dd>Figma Design -  Wireframe + UI Design</dd>
             <dd>Adobe Sketch -  Rapid prototype ideas.</dd>
             <dd>Miro - User flows, Requirements Analysis</dd>
+            <dd>Ipad Adobe Sketch -  Rapid Prototyping</dd>
           </dl>
           </Col>
         </Row>
@@ -137,20 +136,33 @@ export const FeatureRequest = () => (
     </Col>
     </Row>
     <Row className="sect-row">
+    <Col md={3} className="sub-section"><h3 className="title-border">Collaboration Style</h3></Col>
+    <Col md={9} className="sub-content">
+    <p><strong>Daily  UX check-ins</strong> - going through previous day’s work, getting feedback from each other, discussing problems and working on insights.</p>
+
+<p><strong>Bi-weekly project check-ins</strong> - product owner, software engineers, software team lead, project manager and UX designers. 
+  Show the current work in progress, ask tough questions and get sign off on designed solutions. </p>
+
+<p><strong>Kick off meetings </strong>- All stakeholders working remotely and multi disciplinary teams consisting of Tech Leads, 
+  Product Managers, Project Managers, Demo Developers, Programme Leads, Software Engineers and UX designers </p>
+   
+    
+    </Col>
+    </Row>
+    <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Scope &amp; Constraints</h3></Col>
     <Col md={9} className="sub-content">
-      <p>Personally put this forward as I noticed a problem with knowing what the gaps between user use cases were. 
-         Prefer talking  users before starting any 
-        project but at this present moment can’t contact SE’s and partners due to business reasons so designing f
-        or unknown use cases is requires a lot of guessing.</p>
-    </Col>
+    <p>Designing a system for people do not yet use it with no access to them </p>
+      <p>A massive project with a very small budget - two designers</p>
+      <p>Requirements keep changing on the fly</p>
+  </Col>
     </Row>
  </section>
 
  <section className="port-section" id="design" >
  <h2 className="text-center">Design</h2>
     <Row className="sect-row">
-    <Col md={3} className="sub-section"><h3 className="title-border">Idea Generation</h3></Col>
+    <Col md={3} className="sub-section"><h3 className="title-border">Research</h3></Col>
     <Col md={8} className="sub-content">
       <p>Designers talked about the features we wanted and how best to capture the info. 
         We wanted to be basic and give us the info back without having the need to analyse requests.</p>
