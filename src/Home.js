@@ -49,7 +49,7 @@ export const Home = () => (
       </Link>
     </Card>
     <Card>
-    <Link to="/port/FeatureRequest">
+    <Link to="/port/dCloudAssistant">
      <Card.Img src={cb} className="hp-card-img"/>
      <Card.Body>
     
@@ -66,7 +66,7 @@ export const Home = () => (
 <CardDeck className="mb-4">
   
 <Card>
-    <Link to="/port/FeatureRequest">
+    <Link to="/port/Scheduling">
      <Card.Img src={sc}  alt="feature request" className="hp-card-img"/>
      <Card.Body>
     
@@ -80,7 +80,7 @@ export const Home = () => (
       </Link>
     </Card>
     <Card>
-    <Link to="/port/FeatureRequest">
+    <Link to="/port/IconLibrary">
      <Card.Img src={il} className="hp-card-img"/>
      <Card.Body>
     
@@ -111,7 +111,7 @@ export const Home = () => (
       </Link>
     </Card>
     <Card>
-    <Link to="/port/FeatureRequest">
+    <Link to="/port/Documentation">
      <Card.Img src={dc} className="hp-card-img" />
      <Card.Body>
     

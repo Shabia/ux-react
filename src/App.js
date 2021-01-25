@@ -8,6 +8,11 @@ import { NavigationBar } from './components/NavigationBar';
 import { Footer } from './components/Footer';
 import { FeatureRequest } from './port/FeatureRequest';
 import { TopologyBuilder } from './port/TopologyBuilder';
+import { Scheduling } from './port/Scheduling';
+import { IconLibrary } from './port/IconLibrary';
+import { dCloudAssistant } from './port/dCloudAssistant';
+import { Documentation } from './port/Documentation';
+
 
 class App extends Component {
   render() {
@@ -22,6 +27,10 @@ class App extends Component {
               <Route path="/about" component={About} />
               <Route path="/port/FeatureRequest" component={FeatureRequest} />
               <Route path="/port/TopologyBuilder" component={TopologyBuilder} />
+              <Route path="/port/Scheduling" component={Scheduling} />
+              <Route path="/port/IconLibrary" component={IconLibrary} />
+              <Route path="/port/dCloudAssistant" component={dCloudAssistant} />
+              <Route path="/port/Documentation" component={Documentation} />
               <Route component={NoMatch} />
             </Switch>
           </Layout>
