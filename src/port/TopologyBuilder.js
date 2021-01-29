@@ -3,21 +3,11 @@ import {Row, Nav, Col, Card, CardGroup, Container, Table} from 'react-bootstrap'
 import { HashLink as Link } from 'react-router-hash-link';
 import fiveppl from './../assets/5ppl.png'
 import tbprocess from './../assets/TB-Process.svg'
-import frIdea from './../assets/FR-IdeaBoard.svg'
-import frFlowA from './../assets/FR-Design1Flow.svg'
-import frFlowB from './../assets/FR-Design2Flow.svg'
-import frwirea from './../assets/FR-Wire1.svg'
-import frwireba from './../assets/FR-Wire2A.svg'
-import frwirebb from './../assets/FR-Wire2B.svg'
-import frwirebc from './../assets/FR-Wire2C.svg'
-import frdrawone from './../assets/FR-Draw1.svg'
-import frwdrawtwo from './../assets/FR-Draw2.svg'
-import frnewreq from './../assets/FR-NewRequest.gif'
-import frupvote from './../assets/FR-UpVote.gif'
-import frreadcomment from './../assets/FR-ReadComment.gif'
-import fraddcomment from './../assets/FR-AddComment.gif'
-import frreplycomment from './../assets/FR-ReplyComment.gif'
 import tb from './../assets/TB.svg'
+import tbdrawsidebar from './../assets/TB-Draw-Tools-SideBar.png'
+import tbdrawpill from './../assets/TB-Draw-Tools-Pill.png'
+import tbdrawtabs from './../assets/TB-Draw-External-Tabs.png'
+import tbdrawborder from './../assets/TB-Draw-External-Borders.png'
 
 export const TopologyBuilder = () => (
   <div>
@@ -166,8 +156,9 @@ export const TopologyBuilder = () => (
     <Col md={3} className="sub-section"><h3 className="title-border">Analysis</h3></Col>
     <Col md={8} className="sub-content">
   
-      <p>Analysed current app by </p>
-
+      <p>Analysed current app by talking to the previous developers and current users for a walk through</p>
+      <p>Mapped every interaction to understand how it all fit together</p>
+      <p className="display-1"> ADD FLOW DIagram</p>
   
     </Col>
     </Row>
@@ -192,45 +183,31 @@ export const TopologyBuilder = () => (
       <ul>
         <li>What do you like about it</li><li>What do you dislike about it.</li>
       </ul>
-      <h6 className="my-4">Findings</h6>
-      <ul>
+      </Col>
+    </Row>
+    <Row className="sect-row">
+    <Col md={3} className="sub-section"><h5>Findings</h5></Col>
+    <Col md={8} className="sub-content">
+    <ul>
         <li>Can’t visualise vpod gateway- Can’t depict external entities - current one doesn’t show full picture of the solution</li>
         <li>Have to configure all items - when using VM templates no settings come with it just the name of the server</li>
         <li>Can’t see how big the demo is getting, storage size</li>
-        <li>When running demo it can use up a lot of RAM- default Icons too vague and fit for purpose</li>
+        <li>When running demo it can use up a lot of RAM</li> <li>default Icons too vague and fit for purpose</li>
         <li>Might want to demo an alternate icon which fits design better</li>
         <li>Diagrams can get very big, how to see things without a big screen</li>
         <li>No way to collaborate on building the diagram</li>
         <li>Diagrams are very static and no way to able to use it as diagramming tool</li>
         <li>No way to find items</li>
         </ul>
-      </Col>
+        <oblique>* A selection of findings</oblique>
+    </Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Define Requirements</h3></Col>
     <Col md={8} className="sub-content">
-    <p>Putting together the information from the user interviews and checking in with the business</p>
-<h5 className="my-4">Business stakeholders</h5>
-<ul>
-  <li>The business had a few things that tied into what users had problems with</li>
-  <li>Freeform diagramming and ability to add elements that do not need to be configured</li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-<h5 className="my-4">From user insights</h5>
-
-<ul>
-<li>Some sort of search - findability in complex diagrams</li>
-  <li>Photoshop like drawing tools - no limitations in what the tool can demonstrate </li>
-  <li> Navigator , pan + zoom</li>
-  <li> Navigator , pan + zoom</li>
-  <li>Add more views like external, maybe more pages like google sheets</li>
-</ul>
-<h5 className="my-4">Mapping solutions to user problems</h5>
-  
-<Table responsive="sm">
+      <p>Looked at what the business requiremnets were, listed user problems and came up with some solution ideas. </p>
+        <strong>A selection of problems:</strong>
+<Table responsive="sm" striped bordered >
       <thead>
         <tr>
           <th>Problem</th>
@@ -239,22 +216,29 @@ export const TopologyBuilder = () => (
       </thead>
       <tbody>
         <tr>
-          <td>Table cell</td>
-          <td>Table cell</td>
+          <td>Hard to find items</td>
+          <td>Some sort of map type search</td>
         </tr>
         <tr>
-          <td>Table cell</td>
-          <td>Table cell</td>
+          <td>Can't make out how things connect</td>
+          <td>Figure out how to make lines more clear</td>
         </tr>
         <tr>
-          <td>Table cell</td>
-          <td>Table cell</td>
+          <td>Too much on screen for complex topolgies</td>
+          <td>Pan + Zoom, Navigator</td>
+        </tr>
+        <tr>
+          <td>Can't display external entities for a full diagram</td>
+          <td>Figure out how to show external entities</td>
+        </tr>
+        <tr>
+          <td>Sometimes diagram need non functioning items</td>
+          <td>Ability to draw/add images</td>
         </tr>
       </tbody>
     </Table>
 
-  
-    </Col>
+     </Col>
     </Row>
  </section>
  <section className="port-section" id="design" >
@@ -262,14 +246,11 @@ export const TopologyBuilder = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Information Architecture</h3></Col>
     <Col md={8} className="sub-content">
-      <p>Designers talked about the features we wanted and how best to capture the info. 
-        We wanted to be basic and give us the info back without having the need to analyse requests.</p>
-        <ul>
-          <li>Organised ideas into buckets - Important/Nice to have/Overkill</li>
-          <li>Reasons for ideas - Why</li>
-          <li>Two user types - admin (us) topolgy users</li>
-        </ul>
-        <img src={frIdea} alt="Feature Request Ideas Board" className="img-fluid"/> 
+      <p>To understand and have a reference whilst prototyping the flow diagram was redrawn with changes in place. on overview of user movement through the app I redrew the flow digram with changes
+Logical flow of forms/tasks to make better sense
+Added new sections in</p>
+   
+        <p className="display-1"> ADD new FLOW DIagram</p>
     </Col>
     </Row>
    {/* <Row className="sect-row">
@@ -277,21 +258,134 @@ export const TopologyBuilder = () => (
     <Col md={8} className="sub-content"> 
     </Col>
 </Row>*/}
-    <h3 className="title-border">Prototyping</h3>
- 
     <Row className="sect-row">
-    <Col md={3} className="sub-section"><h4>User view Design 1</h4></Col>
+    <Col md={3} className="sub-section"><h3 className="title-border">Rapid Prototyping</h3></Col>
+    <Col md={8} className="sub-content">
+      <p>Use iPad + Adobe Sketch to mockup and draw a few areas. Helped visualise ideas on hard sections and make easy to 
+        wireframe prototype chosen solutions in Figma. A few selected screens - for each say the problem, why the solutions and why pick the final one</p>
+
+        <p className="display-4">This project is massive. Here are some selected ui parts:</p>
+  
+    </Col>
+    </Row>
+    <Row className="sect-row">
+    <Col md={3} className="sub-section"><h4>General screen layouts</h4></Col>
     <Col md={8} className="sub-content"> 
-    <h6 className="mb-3">Flow diagram with basic required features</h6>
-    <img src={frFlowA} alt="Flow A" className="img-fluid"/> 
+ 
     <h6 className="mb-3 mt-5">Sketched Iteration</h6>
-      <img src={frdrawone} alt="hand drawn sketch one" className="img-fluid"/> 
-      <h6 className="mb-3 mt-5">Wireframe</h6>
-      <img src={frwirea} alt="Wireframe design of first iteration" className="img-fluid"/> 
+      
+  
      
       </Col>
       
     </Row>
+    <Row className="sect-row">
+    <Col md={3} className="sub-section"><h4>Toolbar</h4></Col>
+    <Col md={8} className="sub-content"> 
+    <h6 className="mb-3">Side bar </h6>
+    <img src={tbdrawsidebar} alt="Side bar" className="img-fluid mb-2"/> 
+    <p>Pros / Cons</p>
+    <ul className="list-unstyled">
+      <li>+ Room for text</li>
+      <li>+ Easy to understand meaning</li>
+      <li>+ Easy to add sub items</li>
+      <li>- Takes up a lot of diagram space</li>
+      <li>- A lot of empty space below</li>
+    </ul>
+    <h6 className="mb-3 mt-5">Floating Pill</h6>
+    <img src={tbdrawpill} alt="Side bar" className="img-fluid mb-2"/> 
+    <p>Pros / Cons</p>
+    <ul className="list-unstyled">
+      <li>+ Can float over diagram</li>
+      <li>+ Takes up small amount of screen space</li>
+      <li>+ Takes up small amount of screen space</li>
+      <li>- Time to learn icon meaning</li>
+    </ul>
+    
+     
+
+      </Col>
+      
+    </Row>   <Row className="sect-row">
+    <Col md={3} className="sub-section"><h4>External/Internal</h4></Col>
+    <Col md={8} className="sub-content"> 
+    <h6 className="mb-3">Tabbed like excel sheets</h6>
+    <img src={tbdrawtabs} alt="Tabs" className="img-fluid mb-2"/> 
+    <p>Pros / Cons</p>
+    <ul className="list-unstyled">
+      <li>+ Clear tabs to show what is what</li>
+      <li>+ People are used to tabs for diffeerent sections from other software</li>
+      <li>- Can't visualise how internal elements link outside</li>
+      <li>- Might get confusing which tab you're on</li>
+    </ul>
+
+    <h6 className="mb-3 mt-5">Boundaries on diagram</h6>
+    <img src={tbdrawborder} alt="Border" className="img-fluid mb-2"/> 
+    <p>Pros / Cons</p>
+    <ul className="list-unstyled">
+      <li>+ Everything is on one view</li>
+      <li>+ Boundaries will be clear with distinct visual design</li>
+ 
+    </ul>
+   
+      
+      </Col>
+    </Row>
+
+    <Row className="sect-row">
+    <Col md={3} className="sub-section"><h4>Support large diagrams</h4></Col>
+    <Col md={8} className="sub-content"> 
+    <h6 className="mb-3">Navigator</h6>
+
+    <h6 className="mb-3 mt-5">Zoom in + out trackpad</h6>
+   
+      <h6 className="mb-3 mt-5">Wireframe</h6>
+      </Col>
+    </Row>
+    <Row className="sect-row">
+    <Col md={3} className="sub-section"><h4>Device Settings</h4></Col>
+    <Col md={8} className="sub-content"> 
+    <h6 className="mb-3">Flow diagram with basic required features</h6>
+
+    <h6 className="mb-3 mt-5">Sketched Iteration</h6>
+   
+      <h6 className="mb-3 mt-5">Wireframe</h6>
+      </Col>
+    </Row>
+    <Row className="sect-row">
+    <Col md={3} className="sub-section"><h3 className="title-border">Wireframes</h3></Col>
+    <Col md={8} className="sub-content">
+      <p>Use iPad + Adobe Sketch to mockup and draw a few areas. Helped visualise ideas on hard sections and make easy to 
+        wireframe prototype chosen solutions in Figma. A few selected screens - for each say the problem, why the solutions and why pick the final one</p>
+
+        <p className="display-4">This project is massive. Here are some selected ui parts:</p>
+  
+    </Col>
+    </Row>
+    <Row className="sect-row">
+    <Col md={3} className="sub-section"><h4>General screen layouts</h4></Col>
+    <Col md={8} className="sub-content"> 
+ 
+    <h6 className="mb-3 mt-5">Sketched Iteration</h6>
+      
+  
+     
+      </Col>
+      
+    </Row>
+    <Row className="sect-row">
+    <Col md={3} className="sub-section"><h4>Navigation</h4></Col>
+    <Col md={8} className="sub-content"> 
+    <h6 className="mb-3">Flow diagram with basic required features</h6>
+    
+    <h6 className="mb-3 mt-5">Sketched Iteration</h6>
+    
+      <h6 className="mb-3 mt-5">Wireframe</h6>
+
+      </Col>
+      
+    </Row> 
+
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h5>Thoughts &amp; discussion</h5></Col>
     <Col md={8} className="sub-content"><p>Thoughts screen is a bit busy
@@ -303,16 +397,16 @@ export const TopologyBuilder = () => (
     <Col md={3} className="sub-section"><h4>User view Design 2</h4></Col>
     <Col md={8} className="sub-content">
     <h6 className="mb-3">Second pass with additional features</h6>
-    <img src={frFlowB} alt="Flow B" className="img-fluid"/> 
+
     <h6 className="mb-3 mt-5">Sketched page, request form modal, comment/reply idea, request card info</h6>
-      <img src={frwdrawtwo} alt="hand drawn sketch two" className="img-fluid"/> 
+      
       <h5 className="mb-3 mt-5">Wireframes of second designs</h5>
       <h6 className="mb-3">Landing Page</h6>
-      <img src={frwireba} alt="Wireframe design of second iteration - landing page" className="img-fluid"/> 
+      
       <h6 className="mb-3 mt-5">Submit request modal</h6>
-      <img src={frwirebc} alt="Wireframe design of second iteration"/> 
+    
       <h6 className="mb-3 mt-5">Commenting and Replying</h6>
-      <img src={frwirebb} alt="Wireframe design of second iteration" className="img-fluid"/> 
+   
 
       
       </Col>
@@ -334,15 +428,15 @@ export const TopologyBuilder = () => (
         </ul>
        
         <h6 className="mb-3">New Request</h6>
-        <img src={frnewreq} alt="Create a new request" className="img-fluid mb-2 ux-gif"/> 
+        
         <h6 className="mb-3 mt-5">Upvote</h6>
-        <img src={frupvote} alt="Upvote a request" className="img-fluid mb-2 ux-gif"/> 
+     
         <h6 className="mb-3 mt-5">Read Comments</h6>
-        <img src={frreadcomment} alt="Read Comments" className="img-fluid mb-2 ux-gif"/> 
+
         <h6 className="mb-3 mt-5">Add Comment</h6>
-        <img src={fraddcomment} alt="Add Comment" className="img-fluid mb-2 ux-gif"/> 
+ 
         <h6 className="mb-3 mt-5">Reply to Comment</h6>
-        <img src={frreplycomment} alt="Reply to Comment" className="img-fluid mb-2 ux-gif"/> 
+
      </Col>
     </Row>
  </section>

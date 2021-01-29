@@ -106,8 +106,8 @@ export const dCloudAssistant = () => (
           <Col md={6}>
           <dl>
             <dt>Team &amp; Collaborators</dt>
-            <dd>Antony - UUX Design</dd>
-            <dd>Fadzie - Product Mangement</dd>
+            <dd>Antony - UX Design Feedback</dd>
+            <dd>Jimmy - Manager</dd>
           </dl>
           </Col>
           <Col md={6}>
@@ -125,10 +125,7 @@ export const dCloudAssistant = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Scope &amp; Constraints</h3></Col>
     <Col md={9} className="sub-content">
-      <p>Personally put this forward as I noticed a problem with knowing what the gaps between user use cases were. 
-         Prefer talking  users before starting any 
-        project but at this present moment can’t contact SE’s and partners due to business reasons so designing f
-        or unknown use cases is requires a lot of guessing.</p>
+      <p>This project is a design experiment to see other ways we can use dCloud.</p>
     </Col>
     </Row>
  </section>
@@ -136,7 +133,7 @@ export const dCloudAssistant = () => (
  <section className="port-section" id="design" >
  <h2 className="text-center">Design</h2>
     <Row className="sect-row">
-    <Col md={3} className="sub-section"><h3 className="title-border">Idea Generation</h3></Col>
+    <Col md={3} className="sub-section"><h3 className="title-border">Talk to Users</h3></Col>
     <Col md={8} className="sub-content">
       <p>Designers talked about the features we wanted and how best to capture the info. 
         We wanted to be basic and give us the info back without having the need to analyse requests.</p>

@@ -14,20 +14,9 @@ import dc from './assets/DC.svg'
 export const Home = () => (
   <div>
 <Jumbotron>
-  <Container>
-      <Row>
-          <Col lg={8} className="">
-            <h1 className="display-4">Shabia</h1>
-            <h1 className="display-6">UX Product Designer</h1>
-              <p className="lead">
-              I design apps and code front end <br />
-              I love all things art <br />
-              Currently based in London open to roam 
-              </p>
-          </Col>
-            <Col lg={4} className="d-flex align-items-center"> <img src={selfie} className="profile" alt="hp-bg" roundedCircle/> 
-           </Col>
-      </Row>
+  <Container className="text-center">
+            <h1 className="display-4">Portfolio</h1>
+            <h1 className="display-6">UX Product Design</h1>
       </Container>
  </Jumbotron>
 <Container>

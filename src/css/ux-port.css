@@ -115,4 +115,13 @@
 .ux-port dt {
   font-weight: 900;
 }
+
+.ux-port .table-bordered thead th {
+  background: #e53834;
+  color: #fff;
+}
+
+.ux-port .table-bordered td, .ux-port .table-bordered th, .ux-port .table thead th {
+  border: 1px solid #313131;
+}
 /*# sourceMappingURL=ux-port.css.map */
