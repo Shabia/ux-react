@@ -8,6 +8,9 @@ import tbdrawsidebar from './../assets/TB-Draw-Tools-SideBar.png'
 import tbdrawpill from './../assets/TB-Draw-Tools-Pill.png'
 import tbdrawtabs from './../assets/TB-Draw-External-Tabs.png'
 import tbdrawborder from './../assets/TB-Draw-External-Borders.png'
+import tbdrawzoomnav from './../assets/TB-Draw-Zoom-Nav.png'
+import tbdrawzoompan from './../assets/TB-Draw-Zoom-Pan.png'
+import tbdrawzoominout from './../assets/TB-Draw-Zoom-InOut.png'
 
 export const TopologyBuilder = () => (
   <div>
@@ -272,7 +275,7 @@ Added new sections in</p>
     <Col md={3} className="sub-section"><h4>General screen layouts</h4></Col>
     <Col md={8} className="sub-content"> 
  
-    <h6 className="mb-3 mt-5">Sketched Iteration</h6>
+    <h5 className="mb-3 mt-5">Sketched Iteration</h5>
       
   
      
@@ -282,7 +285,7 @@ Added new sections in</p>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>Toolbar</h4></Col>
     <Col md={8} className="sub-content"> 
-    <h6 className="mb-3">Side bar </h6>
+    <h5 className="mb-3">Side bar </h5>
     <img src={tbdrawsidebar} alt="Side bar" className="img-fluid mb-2"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
@@ -292,7 +295,7 @@ Added new sections in</p>
       <li>- Takes up a lot of diagram space</li>
       <li>- A lot of empty space below</li>
     </ul>
-    <h6 className="mb-3 mt-5">Floating Pill</h6>
+    <h5 className="mb-3 mt-5">Floating Pill</h5>
     <img src={tbdrawpill} alt="Side bar" className="img-fluid mb-2"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
@@ -309,7 +312,7 @@ Added new sections in</p>
     </Row>   <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>External/Internal</h4></Col>
     <Col md={8} className="sub-content"> 
-    <h6 className="mb-3">Tabbed like excel sheets</h6>
+    <h5 className="mb-3">Tabbed like excel sheets</h5>
     <img src={tbdrawtabs} alt="Tabs" className="img-fluid mb-2"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
@@ -319,13 +322,12 @@ Added new sections in</p>
       <li>- Might get confusing which tab you're on</li>
     </ul>
 
-    <h6 className="mb-3 mt-5">Boundaries on diagram</h6>
+    <h5 className="mb-3 mt-5">Boundaries on diagram</h5>
     <img src={tbdrawborder} alt="Border" className="img-fluid mb-2"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
       <li>+ Everything is on one view</li>
       <li>+ Boundaries will be clear with distinct visual design</li>
- 
     </ul>
    
       
@@ -335,21 +337,45 @@ Added new sections in</p>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>Support large diagrams</h4></Col>
     <Col md={8} className="sub-content"> 
-    <h6 className="mb-3">Navigator</h6>
+    <p>Some ideas so the diagram can be as large as needed whilst having complete control of position</p>
+    <h5 className="mb-3">Navigator Zoom Tool</h5>
+    <img src={tbdrawzoomnav} alt="Border" className="img-fluid mb-2"/> 
+    <p>Pros / Cons</p>
+    <ul className="list-unstyled">
+      <li>+ Able to zoom in and out of diagram so user can keep adding</li>
+      <li>+ Box around area shows what part of the diagram is on screen</li>
+      <li>- Takes up extra real estate on view</li>
+ 
+    </ul>
 
-    <h6 className="mb-3 mt-5">Zoom in + out trackpad</h6>
+    <h5 className="mb-3 mt-5">Trackpad integration</h5>
+    <strong>Pan </strong><br /><br />
+    <img src={tbdrawzoompan} alt="Border" className="img-fluid mb-2"/> <br /><br />
+    <strong>Zoom in/out</strong>
+    <img src={tbdrawzoominout} alt="Border" className="img-fluid mb-2"/> 
+    <p>Pros / Cons</p>
+    <ul className="list-unstyled">
+      <li>+ These interactions are found in other desktop apps that support drawing and are quite intuative</li>
+      <li>+ Box around area shows what part of the diagram is on screen</li>
+      <li>- Takes up extra real estate on view</li>
+ 
+    </ul>
    
-      <h6 className="mb-3 mt-5">Wireframe</h6>
       </Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>Device Settings</h4></Col>
     <Col md={8} className="sub-content"> 
-    <h6 className="mb-3">Flow diagram with basic required features</h6>
-
-    <h6 className="mb-3 mt-5">Sketched Iteration</h6>
+    <h5 className="mb-3">Flow diagram with basic required features</h5>
+    <img src={tbdrawborder} alt="Border" className="img-fluid mb-2"/> 
+    <p>Pros / Cons</p>
+    <ul className="list-unstyled">
+      <li>+ Everything is on one view</li>
+      <li>+ Boundaries will be clear with distinct visual design</li>
+    </ul>
+    <h5 className="mb-3 mt-5">Sketched Iteration</h5>
    
-      <h6 className="mb-3 mt-5">Wireframe</h6>
+      <h5 className="mb-3 mt-5">Wireframe</h5>
       </Col>
     </Row>
     <Row className="sect-row">
