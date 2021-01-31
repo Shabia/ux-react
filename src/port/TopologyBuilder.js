@@ -11,6 +11,11 @@ import tbdrawborder from './../assets/TB-Draw-External-Borders.png'
 import tbdrawzoomnav from './../assets/TB-Draw-Zoom-Nav.png'
 import tbdrawzoompan from './../assets/TB-Draw-Zoom-Pan.png'
 import tbdrawzoominout from './../assets/TB-Draw-Zoom-InOut.png'
+import tbdrawsearcha from './../assets/TB-Draw-Search-A.png'
+import tbdrawsearchb from './../assets/TB-Draw-Search-B.png'
+import tbdrawsearchc from './../assets/TB-Draw-Search-C.png'
+import tbdrawsearchd from './../assets/TB-Draw-Search-D.png'
+
 
 export const TopologyBuilder = () => (
   <div>
@@ -272,17 +277,6 @@ Added new sections in</p>
     </Col>
     </Row>
     <Row className="sect-row">
-    <Col md={3} className="sub-section"><h4>General screen layouts</h4></Col>
-    <Col md={8} className="sub-content"> 
- 
-    <h5 className="mb-3 mt-5">Sketched Iteration</h5>
-      
-  
-     
-      </Col>
-      
-    </Row>
-    <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>Toolbar</h4></Col>
     <Col md={8} className="sub-content"> 
     <h5 className="mb-3">Side bar </h5>
@@ -357,25 +351,48 @@ Added new sections in</p>
     <ul className="list-unstyled">
       <li>+ These interactions are found in other desktop apps that support drawing and are quite intuative</li>
       <li>+ Box around area shows what part of the diagram is on screen</li>
-      <li>- Takes up extra real estate on view</li>
+      <li>- Users who never have used design apps</li>
  
     </ul>
    
       </Col>
     </Row>
     <Row className="sect-row">
-    <Col md={3} className="sub-section"><h4>Device Settings</h4></Col>
+    <Col md={3} className="sub-section"><h4>Search</h4></Col>
     <Col md={8} className="sub-content"> 
-    <h5 className="mb-3">Flow diagram with basic required features</h5>
-    <img src={tbdrawborder} alt="Border" className="img-fluid mb-2"/> 
+    <h5 className="mb-3">Idea 1</h5>
+    <p></p>
+    <img src={tbdrawsearcha} alt="First Search design" className="img-fluid mb-2"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
       <li>+ Everything is on one view</li>
       <li>+ Boundaries will be clear with distinct visual design</li>
     </ul>
-    <h5 className="mb-3 mt-5">Sketched Iteration</h5>
-   
-      <h5 className="mb-3 mt-5">Wireframe</h5>
+    <h5 className="mb-3 mt-5">Idea 2</h5>
+    <p></p>
+    <img src={tbdrawsearchb} alt="Second Search design" className="img-fluid mb-2"/> 
+    <p>Pros / Cons</p>
+    <ul className="list-unstyled">
+      <li>+ Everything is on one view</li>
+      <li>+ Boundaries will be clear with distinct visual design</li>
+    </ul>
+    <h5 className="mb-3 mt-5">Idea 3</h5>
+    <p></p>
+    <img src={tbdrawsearchc} alt="Third Search design" className="img-fluid mb-2"/> 
+    <p>Pros / Cons</p>
+    <ul className="list-unstyled">
+      <li>+ Everything is on one view</li>
+      <li>+ Boundaries will be clear with distinct visual design</li>
+    </ul>
+    <h5 className="mb-3 mt-5">Idea 4</h5>
+    <p></p>
+    <img src={tbdrawsearchd} alt="Fourth Search design" className="img-fluid mb-2"/> 
+    <p>Pros / Cons</p>
+    <ul className="list-unstyled">
+      <li>+ Everything is on one view</li>
+      <li>+ Boundaries will be clear with distinct visual design</li>
+    </ul>
+  
       </Col>
     </Row>
     <Row className="sect-row">
