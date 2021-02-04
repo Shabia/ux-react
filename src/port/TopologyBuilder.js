@@ -15,6 +15,17 @@ import tbdrawsearcha from './../assets/TB-Draw-Search-A.png'
 import tbdrawsearchb from './../assets/TB-Draw-Search-B.png'
 import tbdrawsearchc from './../assets/TB-Draw-Search-C.png'
 import tbdrawsearchd from './../assets/TB-Draw-Search-D.png'
+import tbwirea from './../assets/TB-Wire-A.png'
+import tbwireb from './../assets/TB-Wire-B.png'
+import tbwiresearch from './../assets/TB-Wire-Search.png'
+import tbwflowsearch from './../assets/TB-Flow-Search.svg'
+import tblinesblue from './../assets/TB-Lines-Blue.svg'
+import tblinescolor from './../assets/TB-Lines-Color.svg'
+import tblinestype from './../assets/TB-Lines-Type.svg'
+import tbiconstates from './../assets/TB-Icon-States.svg'
+import tbdesignfinal from './../assets/TB-Design-Final.svg'
+import tbmenugif from './../assets/TB-Menu.gif'
+import tbmenuvid from './../assets/TB-Menu.mp4'
 
 
 export const TopologyBuilder = () => (
@@ -269,8 +280,8 @@ Added new sections in</p>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Rapid Prototyping</h3></Col>
     <Col md={8} className="sub-content">
-      <p>Use iPad + Adobe Sketch to mockup and draw a few areas. Helped visualise ideas on hard sections and make easy to 
-        wireframe prototype chosen solutions in Figma. A few selected screens - for each say the problem, why the solutions and why pick the final one</p>
+      <p>Used iPad + Adobe Sketch to mockup and draw a few areas. Helped visualise ideas on hard sections and make easy to 
+        wireframe prototype later.</p>
 
         <p className="display-4">This project is massive. Here are some selected ui parts:</p>
   
@@ -361,36 +372,39 @@ Added new sections in</p>
     <Col md={3} className="sub-section"><h4>Search</h4></Col>
     <Col md={8} className="sub-content"> 
     <h5 className="mb-3">Idea 1</h5>
-    <p></p>
+    <p>User types in term, result is highlighted and zoomed in on the diagram with the setting open</p>
     <img src={tbdrawsearcha} alt="First Search design" className="img-fluid mb-2"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
-      <li>+ Everything is on one view</li>
-      <li>+ Boundaries will be clear with distinct visual design</li>
+      <li>+ Shows the result exactly</li>
+      <li>+ Nice that the setting panel is opened</li>
+      <li>- Doesn't support other potential results</li>
     </ul>
     <h5 className="mb-3 mt-5">Idea 2</h5>
-    <p></p>
+    <p>Like above but highlights all potential results with settings opened on side panel with each device on a tab</p>
     <img src={tbdrawsearchb} alt="Second Search design" className="img-fluid mb-2"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
       <li>+ Everything is on one view</li>
       <li>+ Boundaries will be clear with distinct visual design</li>
+      <li>- Might open too many unecessary tabs on side panel</li>
     </ul>
     <h5 className="mb-3 mt-5">Idea 3</h5>
-    <p></p>
+    <p>Fades incorrect results and leaves the matches normal. Added a clear button to remove search state.</p>
     <img src={tbdrawsearchc} alt="Third Search design" className="img-fluid mb-2"/> 
     <p>Pros / Cons</p>
-    <ul className="list-unstyled">
-      <li>+ Everything is on one view</li>
-      <li>+ Boundaries will be clear with distinct visual design</li>
+    <ul className="list-unstyled">=
+      <li>- Having a search state that needs clearning probably adds another layer of complexity</li>
+      <li>- Greying out will confuse with hidden items</li>
     </ul>
     <h5 className="mb-3 mt-5">Idea 4</h5>
-    <p></p>
+    <p>Search modal which shows results with info &gt; user selects a single result which is highlighted and setting opened.</p>
     <img src={tbdrawsearchd} alt="Fourth Search design" className="img-fluid mb-2"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
-      <li>+ Everything is on one view</li>
-      <li>+ Boundaries will be clear with distinct visual design</li>
+      <li>+ Gives user a list choice with info</li>
+      <li>+ Leads them to pick the likely correct result result</li>
+      <li>+ One side panel open rather than multiple potential</li>
     </ul>
   
       </Col>
@@ -398,87 +412,112 @@ Added new sections in</p>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Wireframes</h3></Col>
     <Col md={8} className="sub-content">
-      <p>Use iPad + Adobe Sketch to mockup and draw a few areas. Helped visualise ideas on hard sections and make easy to 
-        wireframe prototype chosen solutions in Figma. A few selected screens - for each say the problem, why the solutions and why pick the final one</p>
-
-        <p className="display-4">This project is massive. Here are some selected ui parts:</p>
+      
+        <p>Wireframes being discused include ui parts from above pen prototypes</p>
   
     </Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>General screen layouts</h4></Col>
     <Col md={8} className="sub-content"> 
- 
-    <h6 className="mb-3 mt-5">Sketched Iteration</h6>
-      
-  
-     
+      <p>Putting it all together</p>
       </Col>
-      
+    </Row>
+
+    <Row className="sect-row">
+    <Col md={3} className="sub-section"><h5>First Iteration</h5></Col>
+    <Col md={8} className="sub-content">
+    <img src={tbwirea} alt="First general screen wireframe" className="img-fluid mb-2"/> 
+        <p>some info</p>
+        <h6>Thoughts &amp; discussion</h6>
+        <p>Some thoughts</p>
+
+      </Col>
     </Row>
     <Row className="sect-row">
-    <Col md={3} className="sub-section"><h4>Navigation</h4></Col>
+    <Col md={3} className="sub-section"><h5>Second Iteration</h5></Col>
+    <Col md={8} className="sub-content">
+    <img src={tbwireb} alt="Second general screen wireframe" className="img-fluid mb-2"/> 
+        <p>some info</p>
+        <h6>Thoughts &amp; discussion</h6>
+        <p>Some thoughts</p>
+
+      </Col>
+    </Row>
+
+    <Row className="sect-row">
+    <Col md={3} className="sub-section"><h4>Search</h4></Col>
     <Col md={8} className="sub-content"> 
-    <h6 className="mb-3">Flow diagram with basic required features</h6>
+    <p>When presenting the search ideas we decided as a team the modal search was probably the most effective. </p>
+    <h5>Search flow</h5>
+    <img src={tbwflowsearch} alt="Search Flow" className="img-fluid mb-2"/> 
+    <p>some info</p>
+    <img src={tbwiresearch} alt="Search Modal" className="img-fluid mb-2"/> 
     
-    <h6 className="mb-3 mt-5">Sketched Iteration</h6>
-    
-      <h6 className="mb-3 mt-5">Wireframe</h6>
+        <h6>Thoughts &amp; discussion</h6>
+        <p>Some thoughts</p>
 
       </Col>
       
     </Row> 
 
-    <Row className="sect-row">
-    <Col md={3} className="sub-section"><h5>Thoughts &amp; discussion</h5></Col>
-    <Col md={8} className="sub-content"><p>Thoughts screen is a bit busy
-        We want to reduce submissions of the same thing so need a way to show other peoples submission
-        Maybe commenting on submissions and for explaining any further views - encourages discussions and conversations
-        A way to show we are working on the submissions - keeps customers engaged and happy</p></Col>
-    </Row>
-    <Row className="sect-row">
-    <Col md={3} className="sub-section"><h4>User view Design 2</h4></Col>
-    <Col md={8} className="sub-content">
-    <h6 className="mb-3">Second pass with additional features</h6>
 
-    <h6 className="mb-3 mt-5">Sketched page, request form modal, comment/reply idea, request card info</h6>
-      
-      <h5 className="mb-3 mt-5">Wireframes of second designs</h5>
-      <h6 className="mb-3">Landing Page</h6>
-      
-      <h6 className="mb-3 mt-5">Submit request modal</h6>
-    
-      <h6 className="mb-3 mt-5">Commenting and Replying</h6>
-   
-
-      
-      </Col>
-    </Row>
     <Row className="sect-row">
-    <Col md={3} className="sub-section"><h5>Thoughts &amp; discussion</h5></Col>
-    <Col md={8} className="sub-content"><p>Thoughts screen is a bit busy
-        We want to reduce submissions of the same thing so need a way to show other peoples submission
-        Maybe commenting on submissions and for explaining any further views - encourages discussions and conversations
-        A way to show we are working on the submissions - keeps customers engaged and happy</p></Col>
-    </Row>
-    <Row className="sect-row">
-    <Col md={3} className="sub-section"><h3 className="title-border">Interactions &amp; Visuals</h3></Col>
+    <Col md={3} className="sub-section"><h3 className="title-border">Visuals</h3></Col>
     <Col md={8} className="sub-content">
-      Visuals designed in Figma using:
-      <ul>
-        <li>Cisco UI Kit - as a base</li>
-        <li>Topology Builder UI design - design language for this suite of products that we previously designed</li>
-        </ul>
-       
-        <h6 className="mb-3">New Request</h6>
-        
-        <h6 className="mb-3 mt-5">Upvote</h6>
+      <p>Some problems needed to be solved using ui design</p>
+     </Col>
+    </Row>
+    <Row className="sect-row">
+    <Col md={3} className="sub-section"><h4>Connections</h4></Col>
+    <Col md={8} className="sub-content">
      
-        <h6 className="mb-3 mt-5">Read Comments</h6>
+        <p>On complex diagram it was hard to tell which device connected to which VLAN as they were all the same</p>
+        <img src={tblinesblue} alt="Lines same colour" className="img-fluid mb-2"/> 
 
-        <h6 className="mb-3 mt-5">Add Comment</h6>
+        <h5 className="mb-3 mt-5">Solution</h5>
+        <p>After some discussion and thoughts we were inspired by the London Tube map and how clearly you can 
+          see the different tube lines by use of colour and line patterns. Adopting something like this into the diagram helped distinguish connections better</p>
+        <img src={tblinescolor} alt="Lines different colour" className="img-fluid mb-2"/> 
+        <p>By alternating line colours there is clarity of how devices and VLANS connect.</p> <p> For line types dashes and dots were introduced:</p>
+        <img src={tblinestype} alt="Lines type" className="img-fluid mb-2"/> 
+
+     </Col>
+    </Row>
+    
+    <Row className="sect-row">
+    <Col md={3} className="sub-section"><h4>States</h4></Col>
+    <Col md={8} className="sub-content">
+     
+        <p>Device icons have different visual states for errors, connections, configuration types etc. Came up with a few types of states that can be used</p>
+        <img src={tbiconstates} alt="Various icon states" className="img-fluid mb-2"/> 
+       
+     </Col>
+    </Row>
+    <Row className="sect-row">
+    <Col md={3} className="sub-section"><h3 className="title-border">Final Design</h3></Col>
+    <Col md={8} className="sub-content">
+     
+        <p>After many iterations and feedback from the business the final visual design evolved to this: </p>
+        <img src={tbdesignfinal} alt="Final design" className="img-fluid mb-2"/> 
+       
+     </Col>
+    </Row>
+    <Row className="sect-row">
+    <Col md={3} className="sub-section"><h4>Interactions</h4></Col>
+    <Col md={8} className="sub-content">
+      <p>A selection of interactions of ui parts</p>
+  
+       
+        <h5 className="mb-3">Menu Function</h5>
+        <img src={tbmenugif} alt="Menu Interaction" className="img-fluid mb-2"/> 
+        <h5 className="mb-3 mt-5">Tab through devices</h5>
+     
+        <h5 className="mb-3 mt-5">Change Icon</h5>
+
+        <h5 className="mb-3 mt-5">Draw line</h5>
  
-        <h6 className="mb-3 mt-5">Reply to Comment</h6>
+        <h5 className="mb-3 mt-5">Navigate</h5>
 
      </Col>
     </Row>
