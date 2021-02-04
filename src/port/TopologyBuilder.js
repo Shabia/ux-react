@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row, Nav, Col, Card, CardGroup, Container, Table} from 'react-bootstrap';
+import {Row, Nav, Col, Card, CardGroup, Container, Table, Alert} from 'react-bootstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 import fiveppl from './../assets/5ppl.png'
 import tbprocess from './../assets/TB-Process.svg'
@@ -19,13 +19,21 @@ import tbwirea from './../assets/TB-Wire-A.png'
 import tbwireb from './../assets/TB-Wire-B.png'
 import tbwiresearch from './../assets/TB-Wire-Search.png'
 import tbwflowsearch from './../assets/TB-Flow-Search.svg'
+import tbflowvlan from './../assets/TB-Flow-Vlan.svg'
+import tbflowvm from './../assets/TB-Flow-VM.svg'
+import tbflowhard from './../assets/TB-Flow-Hardware.svg'
 import tblinesblue from './../assets/TB-Lines-Blue.svg'
 import tblinescolor from './../assets/TB-Lines-Color.svg'
 import tblinestype from './../assets/TB-Lines-Type.svg'
 import tbiconstates from './../assets/TB-Icon-States.svg'
 import tbdesignfinal from './../assets/TB-Design-Final.svg'
 import tbmenugif from './../assets/TB-Menu.gif'
-import tbmenuvid from './../assets/TB-Menu.mp4'
+import tbicongif from './../assets/TB-Icon.gif'
+import tbtabgif from './../assets/TB-Tabs.gif'
+import tbsearchgif from './../assets/TB-Search.gif'
+import tbshowgif from './../assets/TB-ShowHide.gif'
+import tbflowold from './../assets/TB-Flow-Old.jpg'
+
 
 
 export const TopologyBuilder = () => (
@@ -177,7 +185,7 @@ export const TopologyBuilder = () => (
   
       <p>Analysed current app by talking to the previous developers and current users for a walk through</p>
       <p>Mapped every interaction to understand how it all fit together</p>
-      <p className="display-1"> ADD FLOW DIagram</p>
+      <img src={tbflowold} alt="Old TB Flow Diagram" className="img-fluid mb-2"/> 
   
     </Col>
     </Row>
@@ -230,7 +238,7 @@ export const TopologyBuilder = () => (
       <thead>
         <tr>
           <th>Problem</th>
-          <th>Solution</th>
+          <th>Solution Idea</th>
         </tr>
       </thead>
       <tbody>
@@ -260,31 +268,48 @@ export const TopologyBuilder = () => (
      </Col>
     </Row>
  </section>
+ <Row className="justify-content-md-center">
+    <Col md={8} className="text-center">
+    <Alert variant="primary">
+      <Alert.Heading>Hey, this project is pretty big!</Alert.Heading>
+      <p>
+        I'm sure you don't want to read a dissertation so I've selected some ui parts for each design type instead of showing everything.
+      </p>
+    </Alert>
+      </Col>
+</Row>
  <section className="port-section" id="design" >
  <h2 className="text-center">Design</h2>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Information Architecture</h3></Col>
     <Col md={8} className="sub-content">
-      <p>To understand and have a reference whilst prototyping the flow diagram was redrawn with changes in place. on overview of user movement through the app I redrew the flow digram with changes
-Logical flow of forms/tasks to make better sense
-Added new sections in</p>
+      <p>To keep track and have a reference whilst prototyping the flow diagram was redrawn with changes in place. 
+        On overview of user movement through the app I redrew the flow digram with proposed improvements to the flow of forms/tasks to make better sense.
+        </p> <p>The flow diagrams adapted as the design and information architecture changed through prototyping</p>
+        </Col>
+        </Row>
+        <Row className="sect-row">
+    <Col md={3} className="sub-section"><h4>Example user flow diagrams</h4></Col>
+    <Col md={8} className="sub-content"> 
+    <h5 className="mb-3">Add a VLAN</h5>
+    <img src={tbflowvlan} alt="Vlan flow" className="img-fluid mb-2"/> 
    
-        <p className="display-1"> ADD new FLOW DIagram</p>
+    <h5 className="mb-3 mt-5">Add and Configure Virtual Machines</h5>
+    <img src={tbflowvm} alt="VM flow" className="img-fluid mb-2"/> 
+    <h5 className="mb-3 mt-5">Delete Hardware</h5>
+    <img src={tbflowhard} alt="Hardware flow" className="img-fluid mb-2"/> 
+ 
+   
+    
     </Col>
     </Row>
-   {/* <Row className="sect-row">
-    <Col md={3} className="sub-section"><h3 className="title-border">Feature mapping &amp; user flow</h3></Col>
-    <Col md={8} className="sub-content"> 
-    </Col>
-</Row>*/}
+
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Rapid Prototyping</h3></Col>
     <Col md={8} className="sub-content">
       <p>Used iPad + Adobe Sketch to mockup and draw a few areas. Helped visualise ideas on hard sections and make easy to 
         wireframe prototype later.</p>
 
-        <p className="display-4">This project is massive. Here are some selected ui parts:</p>
-  
     </Col>
     </Row>
     <Row className="sect-row">
@@ -512,12 +537,16 @@ Added new sections in</p>
         <h5 className="mb-3">Menu Function</h5>
         <img src={tbmenugif} alt="Menu Interaction" className="img-fluid mb-2"/> 
         <h5 className="mb-3 mt-5">Tab through devices</h5>
+        <img src={tbtabgif} alt="Tabs Interaction" className="img-fluid mb-2"/> 
      
         <h5 className="mb-3 mt-5">Change Icon</h5>
+        <img src={tbicongif} alt="Change Icon Interaction" className="img-fluid mb-2"/> 
 
-        <h5 className="mb-3 mt-5">Draw line</h5>
+        <h5 className="mb-3 mt-5">Show/Hide Details</h5>
+        <img src={tbshowgif} alt="Show hide Interaction" className="img-fluid mb-2"/> 
  
-        <h5 className="mb-3 mt-5">Navigate</h5>
+        <h5 className="mb-3 mt-5">Search</h5>
+        <img src={tbsearchgif} alt="Search Interaction" className="img-fluid mb-2"/> 
 
      </Col>
     </Row>
