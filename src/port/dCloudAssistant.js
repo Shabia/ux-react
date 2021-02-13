@@ -6,13 +6,15 @@ import cbprocess from './../assets/CB-Process.svg'
 import cbwire1 from './../assets/CB-Wire1.png'
 import cbwire2 from './../assets/CB-Wire2.png'
 import cbwire3 from './../assets/CB-Wire3.png'
-import frnewreq from './../assets/FR-NewRequest.gif'
-import frupvote from './../assets/FR-UpVote.gif'
-import frreadcomment from './../assets/FR-ReadComment.gif'
-import fraddcomment from './../assets/FR-AddComment.gif'
-import frreplycomment from './../assets/FR-ReplyComment.gif'
+import cbstart from './../assets/CB-StartApp.gif'
+import cbcsupport from './../assets/CB-ContactSupport.gif'
+import cbschedule from './../assets/CB-Schedule.gif'
+import cbssearch from './../assets/CB-Searchgif.gif'
+import cbtopdemo from './../assets/CB-TopDemos.gif'
+import cbconnection from './../assets/CB-ConnectionTest.gif'
 import cb from './../assets/CB.svg'
 import cbflow from './../assets/CB-Flow.svg'
+import cbvisual from './../assets/CB-Visuals.png'
 
 export const dCloudAssistant = () => (
   <div>
@@ -200,29 +202,34 @@ export const dCloudAssistant = () => (
     </ul>
      </Col>
   </Row>
-
+  <Row className="sect-row">
+    <Col md={3} className="sub-section"><h3 className="title-border">Visuals</h3></Col>
+    <Col md={8} className="sub-content">
+      
+      <p>Visuals designed in Figma using Cisco UI design language as a base</p>
+        <img src={cbvisual} alt="Visual designs" className="img-fluid mb-2 "/> 
+        <div>
+    </div>
+    </Col>
+    </Row>
     <Row className="sect-row">
-    <Col md={3} className="sub-section"><h3 className="title-border">Interactions &amp; Visuals</h3></Col>
+    <Col md={3} className="sub-section"><h3 className="title-border">Interactions</h3></Col>
     <Col md={8} className="sub-content">
       <h4>Putting it all together now</h4>
-      <p>Visuals designed in Figma using:</p>
-      <ul>
-        <li>Cisco UI design language as a base</li>
-        <li>Figma interactions</li>
-        </ul>
-       
+      <p>Interactions designed in Figma</p>
+    
         <h5 className="mb-3">Start Using App</h5>
-        <img src={frnewreq} alt="Create a new request" className="img-fluid mb-2 ux-gif"/> 
+        <img src={cbstart} alt="Start App" className="img-fluid mb-2 ux-gif"/> 
         <h5 className="mb-3 mt-5">See Schedule</h5>
-        <img src={frupvote} alt="Upvote a request" className="img-fluid mb-2 ux-gif"/> 
-        <h5 className="mb-3 mt-5">Book a Session</h5>
-        <img src={frreadcomment} alt="Read Comments" className="img-fluid mb-2 ux-gif"/> 
-        <h5 className="mb-3 mt-5">Test Connection</h5>
-        <img src={fraddcomment} alt="Add Comment" className="img-fluid mb-2 ux-gif"/> 
+        <img src={cbschedule} alt="See schedule" className="img-fluid mb-2 ux-gif"/> 
         <h5 className="mb-3 mt-5">Search</h5>
-        <img src={frreplycomment} alt="Reply to Comment" className="img-fluid mb-2 ux-gif"/> 
+        <img src={cbssearch} alt="Search for demos" className="img-fluid mb-2 ux-gif"/> 
+        <h5 className="mb-3 mt-5">Test Connection</h5>
+        <img src={cbconnection} alt="Connection Test" className="img-fluid mb-2 ux-gif"/> 
+        <h5 className="mb-3 mt-5">Top Demos</h5>
+        <img src={cbtopdemo} alt="See top demos" className="img-fluid mb-2 ux-gif"/> 
         <h5 className="mb-3 mt-5">Contact Support</h5>
-        <img src={frreplycomment} alt="Reply to Comment" className="img-fluid mb-2 ux-gif"/> 
+        <img src={cbcsupport} alt="Contact support" className="img-fluid mb-2 ux-gif"/> 
    
    
         <div>
@@ -237,12 +244,8 @@ export const dCloudAssistant = () => (
  <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Thoughts</h3></Col>
     <Col md={8} className="sub-content">
-      <p>As this is something new and an experiment we will see how many people use it. To start with we will have 10,000 users a 5% response rate is
-         normal for surveys and user feedback on dCloud apps so we can measure it against that.</p>
-<p>What worked well in the project? - designing for myself  - this is unusual as everything in this team has been for products most people would never use. Figuring out problems was really fast.
-In hindsight, what would you do differently? - Look at how we manage and analyse overall feedback for completely new projects. Spend some time talking to the new potential users
-If you’d had more time, what would you have done? - A full on admin system for the requests
-What data do you have to quantify the results of the project? - At time of writing this has been broken down into stories and now being built.</p>
+      <p>What didn't work</p>
+<p>What worked well in the project? </p>
 
     </Col>
     </Row>
