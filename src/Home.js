@@ -52,22 +52,22 @@ export const Home = () => (
       </Link>
     </Card>
 </CardDeck>
-<CardDeck className="mb-4">
-  
-<Card>
-    <Link to="/port/Scheduling">
-     <Card.Img src={sc}  alt="feature request" className="hp-card-img"/>
+{/*<CardDeck className="mb-4">
+      <Card>
+    <Link to="/port/Documentation">
+     <Card.Img src={dc} className="hp-card-img" />
      <Card.Body>
     
       <Row>
-      <Col lg={5} ><Card.Title>Scheduling</Card.Title>
-        </Col><Col lg={7} ><Card.Text>
-        <small className="text-muted">Mobile App - Booking Calendar</small>
+      <Col lg={7} ><Card.Title>Documentation</Card.Title>
+        </Col><Col lg={5} ><Card.Text>
+        <small className="text-muted">Web UI - Technical Help</small>
         </Card.Text></Col>
       </Row>
       </Card.Body>
       </Link>
     </Card>
+
     <Card>
     <Link to="/port/IconLibrary">
      <Card.Img src={il} className="hp-card-img"/>
@@ -82,9 +82,22 @@ export const Home = () => (
       </Card.Body>
       </Link>
     </Card>
-</CardDeck>
+</CardDeck>*/}
 <CardDeck>
-  
+<Card>
+    <Link to="/port/Scheduling">
+     <Card.Img src={sc}  alt="feature request" className="hp-card-img"/>
+     <Card.Body>
+    
+      <Row>
+      <Col lg={5} ><Card.Title>Scheduling</Card.Title>
+        </Col><Col lg={7} ><Card.Text>
+        <small className="text-muted">Mobile App - Booking Calendar</small>
+        </Card.Text></Col>
+      </Row>
+      </Card.Body>
+      </Link>
+    </Card>
 <Card>
     <Link to="/port/FeatureRequest">
      <Card.Img src={fr} className="hp-card-img" />
@@ -99,20 +112,8 @@ export const Home = () => (
       </Card.Body>
       </Link>
     </Card>
-    <Card>
-    <Link to="/port/Documentation">
-     <Card.Img src={dc} className="hp-card-img" />
-     <Card.Body>
+
     
-      <Row>
-      <Col lg={7} ><Card.Title>Documentation</Card.Title>
-        </Col><Col lg={5} ><Card.Text>
-        <small className="text-muted">Web UI - Technical Help</small>
-        </Card.Text></Col>
-      </Row>
-      </Card.Body>
-      </Link>
-    </Card>
 </CardDeck>
      
       </Container>

@@ -10,7 +10,8 @@
 }
 
 .ux-port h1, .ux-port h2, .ux-port h3, .ux-port h4, .ux-port h5, .ux-port h6,
-.ux-port .h1, .ux-port .h2, .ux-port .h3, .ux-port .h4, .ux-port .h5, .ux-port .h6 {
+.ux-port .h1, .ux-port .h2, .ux-port .h3, .ux-port .h4, .ux-port .h5, .ux-port .h6,
+.ux-port .display-1, .ux-port .display-2, .ux-port .display-3, .ux-port .display-4, .ux-port .display-5, .ux-port .display-6 {
   font-family: "Libre Baskerville", serif;
   font-style: normal;
   font-weight: 800;
@@ -34,10 +35,6 @@
 
 .ux-port .card a:hover {
   text-decoration: none;
-}
-
-.ux-port footer {
-  background-color: #e0e2e4;
 }
 
 .ux-port .navbar {
@@ -123,5 +120,39 @@
 
 .ux-port .table-bordered td, .ux-port .table-bordered th, .ux-port .table thead th {
   border: 1px solid #313131;
+}
+
+.ux-port .social-container a.social {
+  margin: 0 1rem;
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+  display: inline-block;
+}
+
+.ux-port .social-container a.social:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.ux-port .social-container a {
+  color: #313131;
+}
+
+.ux-port footer {
+  background-color: #e0e2e4;
+}
+
+.ux-port footer p {
+  font-family: "Libre Baskerville", serif;
+}
+
+.ux-port footer h5 {
+  font-size: 1rem;
+}
+
+.ux-port .lead {
+  font-weight: 800;
 }
 /*# sourceMappingURL=ux-port.css.map */

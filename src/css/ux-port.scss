@@ -34,7 +34,8 @@ $spacer: 1rem;
     font-size: 1.1rem;
     @include base-font();
     h1, h2, h3, h4, h5, h6,
-    .h1, .h2, .h3, .h4, .h5, .h6  {
+    .h1, .h2, .h3, .h4, .h5, .h6,
+    .display-1, .display-2,.display-3,.display-4,.display-5, .display-6{
         @include h-font;
     }
  
@@ -59,9 +60,7 @@ $spacer: 1rem;
         }
     }
 
-    footer {
-        background-color: $bg-contrast;
-    }
+  
     .navbar {
         @include h-font;
     }
@@ -128,7 +127,33 @@ $spacer: 1rem;
     .table-bordered td, .table-bordered th, .table thead th {
         border: 1px solid #313131;
     }
+    .social-container {
 
+        a.social {
+            margin: 0 1rem;
+            transition: transform 250ms;
+            display: inline-block;
+          }
+
+          a.social:hover {
+            transform: translateY(-2px);
+          }
+
+          a{
+            color: $font-color;
+          }
+          
+         
+      }  
+      footer {
+        background-color: $bg-contrast;
+        p {font-family: $title-font;}
+        h5 {font-size: 1rem;}
+       
+    }
+    .lead {
+        font-weight: 800;
+    }
 }
 //Bootstrap imports
 //@import "../../node_modules/bootstrap/scss/bootstrap";
