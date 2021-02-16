@@ -1,23 +1,14 @@
 import React from 'react'
 import {Row, Nav, Col, Card, CardGroup, Container} from 'react-bootstrap';
 import { HashLink as Link } from 'react-router-hash-link';
-import twoppl from './../assets/2ppl.png'
-import threeppl from './../assets/3ppl.png'
-import frprocess from './../assets/FR-Process.svg'
-import frIdea from './../assets/FR-IdeaBoard.svg'
-import frFlowA from './../assets/FR-Design1Flow.svg'
-import frFlowB from './../assets/FR-Design2Flow.svg'
-import frwirea from './../assets/FR-Wire1.svg'
-import frwireba from './../assets/FR-Wire2A.svg'
-import frwirebb from './../assets/FR-Wire2B.svg'
-import frwirebc from './../assets/FR-Wire2C.svg'
-import frdrawone from './../assets/FR-Draw1.svg'
-import frwdrawtwo from './../assets/FR-Draw2.svg'
-import frnewreq from './../assets/FR-NewRequest.gif'
-import frupvote from './../assets/FR-UpVote.gif'
-import frreadcomment from './../assets/FR-ReadComment.gif'
-import fraddcomment from './../assets/FR-AddComment.gif'
-import frreplycomment from './../assets/FR-ReplyComment.gif'
+import fiveppl from './../assets/5ppl.png'
+import scprocess from './../assets/SC-Process.svg'
+import scdraft1 from './../assets/SC-Draft1.png'
+import scdraft2 from './../assets/SC-Draft2.png'
+import scflow from './../assets/SC-Flow.png'
+import scwire from './../assets/SC-Wire.png'
+import scvisual from './../assets/SC-Visual.png'
+
 import sc from './../assets/SC.svg'
 
 export const Scheduling = () => (
@@ -29,7 +20,7 @@ export const Scheduling = () => (
     <Col md={6} className="py-5">
             <h1 className="display-6">Scheduling</h1>
             <blockquote class="blockquote title-border my-4">
-              <p>A feature request system to capture user needs, feedback and determine the most popular requests.</p>
+              <p>An on the go quick mobile booking of content</p>
             </blockquote>
         
               <Nav defaultActiveKey="/home" className="flex-column">
@@ -50,7 +41,7 @@ export const Scheduling = () => (
  <section className="port-section" >
  <h2 className="text-center">Process</h2>
  <div className="text-center">
- <img src={frprocess} alt="Process" className="img-fluid"/> 
+ <img src={scprocess} alt="Process" className="img-fluid"/> 
  </div>
  </section>
 
@@ -59,38 +50,24 @@ export const Scheduling = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Problem</h3></Col>
     <Col md={8} className="sub-content">
-    <p>Repurposing Topology builder for a new user groups who have never used the system before but will need to because of losing their offices 
-        to remote work. We have an idea of these user’s day to day activity but to learn better on how to add more user specific features we decided 
-        some sort of feedback system is required.</p>
-    <p>`Find out what is missing from Topology builder especially from large new types of people such as Cisco sellers, 
-      partners and sales engineers, whom is it missing for and why they’d like it. This will help us going forward to design features 
-      for new specific groups of users.</p>
+    <p>A lot of people like to schedule content from their phones but the current UI for this unaavilable on mobile</p>
+    <p>Need a simple booking app to find content fast and schedule it</p>
 
     </Col>
     </Row>
+   
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Users	&amp; Audience</h3></Col>
     <Col md={9} className="sub-content">
     <CardGroup>
   <Card>
-    <div className="text-center">
-      <Card.Img variant="middle" src={twoppl} className="img-fluid" />
-    </div>
-    <Card.Body>
-      <Card.Title>Product Managers, UX Designers</Card.Title>
-      <Card.Text>
-      Look at the reported problems and design the solutions
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <Card>
   <div className="text-center">
-    <Card.Img variant="middle" src={threeppl} className="img-fluid" />
+    <Card.Img variant="middle" src={fiveppl} className="img-fluid" />
     </div>
-    <Card.Body>
-      <Card.Title>Network &mp; Sales Engineers, Partners + all new user types we don’t know</Card.Title>
+    <Card.Body className="text-center">
+      <Card.Title>dCloud super users, Sales Engineers, Demo developers</Card.Title>
       <Card.Text>
-      Report needs, problems and missing features
+      Highly tehcnical individuals who often use APIs to skip the UI
       </Card.Text>
     </Card.Body>
   </Card>
@@ -98,6 +75,7 @@ export const Scheduling = () => (
 
     </Col>
     </Row>
+
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Team &amp; Tools</h3></Col>
     <Col md={9} className="sub-content">
@@ -106,7 +84,7 @@ export const Scheduling = () => (
           <Col md={6}>
           <dl>
             <dt>Role</dt>
-            <dd>UX Designer</dd>
+            <dd>UX Designer - Booking</dd>
           </dl>
           </Col>
           <Col md={6}>
@@ -120,8 +98,7 @@ export const Scheduling = () => (
           <Col md={6}>
           <dl>
             <dt>Team &amp; Collaborators</dt>
-            <dd>Antony - UUX Design</dd>
-            <dd>Fadzie - Product Mangement</dd>
+            <dd>Antony - UX Design - Find Content</dd>
           </dl>
           </Col>
           <Col md={6}>
@@ -129,7 +106,7 @@ export const Scheduling = () => (
             <dt>Method  and Tools</dt>
             <dd>Figma Design -  Wireframe + UI Design</dd>
             <dd>Adobe Sketch -  Rapid prototype ideas.</dd>
-            <dd>Miro - User flows, Requirements Analysis</dd>
+            <dd>Google Analytics - Usage stats</dd>
           </dl>
           </Col>
         </Row>
@@ -139,10 +116,7 @@ export const Scheduling = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Scope &amp; Constraints</h3></Col>
     <Col md={9} className="sub-content">
-      <p>Personally put this forward as I noticed a problem with knowing what the gaps between user use cases were. 
-         Prefer talking  users before starting any 
-        project but at this present moment can’t contact SE’s and partners due to business reasons so designing f
-        or unknown use cases is requires a lot of guessing.</p>
+      <p>Deliver in one week.</p>
     </Col>
     </Row>
  </section>
@@ -150,91 +124,111 @@ export const Scheduling = () => (
  <section className="port-section" id="design" >
  <h2 className="text-center">Design</h2>
     <Row className="sect-row">
-    <Col md={3} className="sub-section"><h3 className="title-border">Idea Generation</h3></Col>
+    <Col md={3} className="sub-section"><h3 className="title-border">Investigate Analytics</h3></Col>
     <Col md={8} className="sub-content">
-      <p>Designers talked about the features we wanted and how best to capture the info. 
-        We wanted to be basic and give us the info back without having the need to analyse requests.</p>
+      <p>Since the deadline is extremely short we looked at analytics to see how people scheduled from mobile and what devices they were using</p>
         <ul>
-          <li>Organised ideas into buckets - Important/Nice to have/Overkill</li>
-          <li>Reasons for ideas - Why</li>
-          <li>Two user types - admin (us) topolgy users</li>
+          <li>Primary device was iPhone by a big margin</li>
+          <li>A lot of drop offs on calendar page</li>
+          <li>Something else</li>
         </ul>
-        <img src={frIdea} alt="Feature Request Ideas Board" className="img-fluid"/> 
+       
     </Col>
     </Row>
-   {/* <Row className="sect-row">
-    <Col md={3} className="sub-section"><h3 className="title-border">Feature mapping &amp; user flow</h3></Col>
-    <Col md={8} className="sub-content"> 
-    </Col>
-</Row>*/}
+
+
+
     <h3 className="title-border">Prototyping</h3>
  
     <Row className="sect-row">
-    <Col md={3} className="sub-section"><h4>User view Design 1</h4></Col>
+    <Col md={3} className="sub-section"><h4>First Idea</h4></Col>
     <Col md={8} className="sub-content"> 
-    <h6 className="mb-3">Flow diagram with basic required features</h6>
-    <img src={frFlowA} alt="Flow A" className="img-fluid"/> 
-    <h6 className="mb-3 mt-5">Sketched Iteration</h6>
-      <img src={frdrawone} alt="hand drawn sketch one" className="img-fluid"/> 
-      <h6 className="mb-3 mt-5">Wireframe</h6>
-      <img src={frwirea} alt="Wireframe design of first iteration" className="img-fluid"/> 
-     
-      </Col>
-      
-    </Row>
-    <Row className="sect-row">
-    <Col md={3} className="sub-section"><h5>Thoughts &amp; discussion</h5></Col>
-    <Col md={8} className="sub-content"><p>Thoughts screen is a bit busy
-        We want to reduce submissions of the same thing so need a way to show other peoples submission
-        Maybe commenting on submissions and for explaining any further views - encourages discussions and conversations
-        A way to show we are working on the submissions - keeps customers engaged and happy</p></Col>
-    </Row>
-    <Row className="sect-row">
-    <Col md={3} className="sub-section"><h4>User view Design 2</h4></Col>
-    <Col md={8} className="sub-content">
-    <h6 className="mb-3">Second pass with additional features</h6>
-    <img src={frFlowB} alt="Flow B" className="img-fluid"/> 
-    <h6 className="mb-3 mt-5">Sketched page, request form modal, comment/reply idea, request card info</h6>
-      <img src={frwdrawtwo} alt="hand drawn sketch two" className="img-fluid"/> 
-      <h5 className="mb-3 mt-5">Wireframes of second designs</h5>
-      <h6 className="mb-3">Landing Page</h6>
-      <img src={frwireba} alt="Wireframe design of second iteration - landing page" className="img-fluid"/> 
-      <h6 className="mb-3 mt-5">Submit request modal</h6>
-      <img src={frwirebc} alt="Wireframe design of second iteration"/> 
-      <h6 className="mb-3 mt-5">Commenting and Replying</h6>
-      <img src={frwirebb} alt="Wireframe design of second iteration" className="img-fluid"/> 
+    <h5 className="mb-3">Book via Available slots</h5>
+    <p>User sees available slots in a range of dates/times </p>
+    <p>The bot ultra smart in having a conversation and responds pretty well</p>
+    <img src={scdraft1} alt="Wireframe 1" className="img-fluid"/> 
+    <p>Pros / Cons</p>
+    <ul className="list-unstyled">
+      <li>+ Simple basic UI</li>
+      <li>+ Use of natural language by bot</li>
+      <li>- Reponses from bot are too long</li>
+      <li>- Bot is not going to be that smart so we have to change how the responses work</li>
+    </ul>
+     </Col>
+  </Row>
 
-      
-      </Col>
-    </Row>
-    <Row className="sect-row">
-    <Col md={3} className="sub-section"><h5>Thoughts &amp; discussion</h5></Col>
-    <Col md={8} className="sub-content"><p>Thoughts screen is a bit busy
-        We want to reduce submissions of the same thing so need a way to show other peoples submission
-        Maybe commenting on submissions and for explaining any further views - encourages discussions and conversations
-        A way to show we are working on the submissions - keeps customers engaged and happy</p></Col>
-    </Row>
-    <Row className="sect-row">
-    <Col md={3} className="sub-section"><h3 className="title-border">Interactions &amp; Visuals</h3></Col>
+  <Row className="sect-row">
+    <Col md={3} className="sub-section"><h4>Second Idea</h4></Col>
+    <Col md={8} className="sub-content"> 
+    <h5 className="mb-3">Adding commands and reducing language complexity</h5>
+    <p>Main goal is to make interactions very simple with basic responses like yes/no so that it's easy to understand for the bot </p>
+    <p>The responses from the bot are simplified as we want to reduce time spent talking</p>
+    <p>Introduction of tasks as commands</p>
+    <img src={scdraft2} alt="Wireframe 2" className="img-fluid"/> 
+    <p>Pros / Cons</p>
+    <ul className="list-unstyled">
+      <li>+ List of tasks useful</li>
+      <li>+ Option to handle error e.g. failed connection test with exit (reschedule)</li>
+      <li>+ Yes no answers make it quick</li>
+      <li>- How do you even use tasks quickly?</li>
+    </ul>
+     </Col>
+  </Row>
+  <Row className="sect-row">
+    <Col md={3} className="sub-section"><h3 className="title-border"> User Journey</h3></Col>
     <Col md={8} className="sub-content">
-      Visuals designed in Figma using:
-      <ul>
-        <li>Cisco UI Kit - as a base</li>
-        <li>Topology Builder UI design - design language for this suite of products that we previously designed</li>
-        </ul>
-       
-        <h6 className="mb-3">New Request</h6>
-        <img src={frnewreq} alt="Create a new request" className="img-fluid mb-2 ux-gif"/> 
-        <h6 className="mb-3 mt-5">Upvote</h6>
-        <img src={frupvote} alt="Upvote a request" className="img-fluid mb-2 ux-gif"/> 
-        <h6 className="mb-3 mt-5">Read Comments</h6>
-        <img src={frreadcomment} alt="Read Comments" className="img-fluid mb-2 ux-gif"/> 
-        <h6 className="mb-3 mt-5">Add Comment</h6>
-        <img src={fraddcomment} alt="Add Comment" className="img-fluid mb-2 ux-gif"/> 
-        <h6 className="mb-3 mt-5">Reply to Comment</h6>
-        <img src={frreplycomment} alt="Reply to Comment" className="img-fluid mb-2 ux-gif"/> 
+    <img src={scflow} alt=" flow diagram" className="img-fluid"/>
+ 
+    </Col>
+    </Row>
+  <Row className="sect-row">
+    <Col md={3} className="sub-section"><h3 className="title-border">Wireframes</h3></Col>
+    <Col md={8} className="sub-content"> 
+    <h5 className="mb-3">Adding commands and reducing language complexity</h5>
+    <p>Main goal is to make interactions very simple with basic responses like yes/no so that it's easy to understand for the bot </p>
+    <p>The responses from the bot are simplified as we want to reduce time spent talking</p>
+    <p>Introduction of tasks as commands</p>
+    <img src={scwire} alt="Wireframe 1" className="img-fluid"/> 
+    <p>Pros / Cons</p>
+    <ul className="list-unstyled">
+      <li>+ List of tasks useful</li>
+      <li>+ Option to handle error e.g. failed connection test with exit (reschedule)</li>
+      <li>+ Yes no answers make it quick</li>
+      <li>- How do you even use tasks quickly?</li>
+    </ul>
+     </Col>
+  </Row>
+
+  <Row className="sect-row">
+    <Col md={3} className="sub-section"><h3 className="title-border">Visuals</h3></Col>
+    <Col md={8} className="sub-content">
+      
+      <p>Visuals designed in Figma using Cisco UI design language as a base</p>
+        <img src={scvisual} alt="Visual designs" className="img-fluid mb-2 "/> 
+        <div>
+    </div>
+    </Col>
+    </Row>
+    <Row className="sect-row">
+    <Col md={3} className="sub-section"><h3 className="title-border">Interactions</h3></Col>
+    <Col md={8} className="sub-content">
+      <h4>Putting it all together now</h4>
+      <p>Interactions designed in Figma</p>
+    
+      {/*   <h5 className="mb-3">Start Using App</h5>
+        <img src={cbstart} alt="Start App" className="img-fluid mb-2 ux-gif"/> 
+        <h5 className="mb-3 mt-5">See Schedule</h5>
+        <img src={cbschedule} alt="See schedule" className="img-fluid mb-2 ux-gif"/> 
+        <h5 className="mb-3 mt-5">Search</h5>
+        <img src={cbssearch} alt="Search for demos" className="img-fluid mb-2 ux-gif"/> 
+        <h5 className="mb-3 mt-5">Test Connection</h5>
+        <img src={cbconnection} alt="Connection Test" className="img-fluid mb-2 ux-gif"/> 
+        <h5 className="mb-3 mt-5">Top Demos</h5>
+        <img src={cbtopdemo} alt="See top demos" className="img-fluid mb-2 ux-gif"/> 
+        <h5 className="mb-3 mt-5">Contact Support</h5>
+        <img src={cbcsupport} alt="Contact support" className="img-fluid mb-2 ux-gif"/> 
    
-   
+   */}
         <div>
     </div>
         
@@ -247,12 +241,7 @@ export const Scheduling = () => (
  <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Throughts</h3></Col>
     <Col md={8} className="sub-content">
-      <p>As this is something new and an experiment we will see how many people use it. To start with we will have 10,000 users a 5% response rate is
-         normal for surveys and user feedback on dCloud apps so we can measure it against that.</p>
-<p>What worked well in the project? - designing for myself  - this is unusual as everything in this team has been for products most people would never use. Figuring out problems was really fast.
-In hindsight, what would you do differently? - Look at how we manage and analyse overall feedback for completely new projects. Spend some time talking to the new potential users
-If you’d had more time, what would you have done? - A full on admin system for the requests
-What data do you have to quantify the results of the project? - At time of writing this has been broken down into stories and now being built.</p>
+      <p>Things</p>
 
     </Col>
     </Row>

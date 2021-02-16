@@ -2,7 +2,7 @@ import React from 'react'
 import {Jumbotron, Row, Col, Container} from 'react-bootstrap'
 import selfie from './assets/selfie.jpg'
 
-{/*import { render } from "react-dom";*/}
+
 import Gallery from "react-photo-gallery";
 import { photos } from "./components/photos";
 

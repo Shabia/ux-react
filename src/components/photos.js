@@ -1,16 +1,16 @@
 export const photos = [
   {
-    src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+    src: "https://ichef.bbci.co.uk/news/976/cpsprodpb/E39C/production/_111686285_pic2.png",
     width: 4,
     height: 3
   },
   {
-    src: "./../../assets/selfie.jpg",
+    src: "./../../assets/2ppl.png",
     width: 1,
     height: 1
   },
   {
-    src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+    src: "https://www.dropbox.com/s/ynwcy0dzhxn2g28/LakesDec2020-54.jpg?dl=0",
     width: 3,
     height: 4
   },
