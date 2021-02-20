@@ -2,10 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import {Jumbotron, Row, Col, Card, CardDeck, Container } from 'react-bootstrap';
 
-{/* 
-import il from './assets/IL.svg'
-import dc from './assets/DC.svg'
-*/}
+
 import fr from './assets/FR.svg'
 import sc from './assets/SC.svg'
 import tb from './assets/TB.svg'
@@ -54,37 +51,7 @@ export const Home = () => (
       </Link>
     </Card>
 </CardDeck>
-{/*<CardDeck className="mb-4">
-      <Card>
-    <Link to="/port/Documentation">
-     <Card.Img src={dc} className="hp-card-img" />
-     <Card.Body>
-    
-      <Row>
-      <Col lg={7} ><Card.Title>Documentation</Card.Title>
-        </Col><Col lg={5} ><Card.Text>
-        <small className="text-muted">Web UI - Technical Help</small>
-        </Card.Text></Col>
-      </Row>
-      </Card.Body>
-      </Link>
-    </Card>
 
-    <Card>
-    <Link to="/port/IconLibrary">
-     <Card.Img src={il} className="hp-card-img"/>
-     <Card.Body>
-    
-      <Row>
-      <Col lg={5} ><Card.Title>Icon Library</Card.Title>
-        </Col><Col lg={7} ><Card.Text>
-        <small className="text-muted text-right">Web UI - Asset Management</small>
-        </Card.Text></Col>
-      </Row>
-      </Card.Body>
-      </Link>
-    </Card>
-</CardDeck>*/}
 <CardDeck>
 <Card>
     <Link to="/port/Scheduling">
