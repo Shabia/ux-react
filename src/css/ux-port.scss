@@ -38,14 +38,14 @@ $spacer: 1rem;
     .display-1, .display-2,.display-3,.display-4,.display-5, .display-6{
         @include h-font;
     }
- 
+    @media screen and (min-width: 768px) {
         .sub-section {
             h4,h5, h6, .h4, .h5, .h6 {
                 text-align: end;
             }
         }
   
- 
+    }
 
     a {
         color: $alink;
@@ -153,6 +153,11 @@ $spacer: 1rem;
     }
     .lead {
         font-weight: 800;
+    }
+    .navbar-light .navbar-toggler, .navbar-toggler:focus, .navbar-toggler:hover {
+        border-color: $font-color;
+        border-radius: 0;
+        border: 3px solid;
     }
 }
 //Bootstrap imports

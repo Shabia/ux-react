@@ -17,8 +17,10 @@
   font-weight: 800;
 }
 
-.ux-port .sub-section h4, .ux-port .sub-section h5, .ux-port .sub-section h6, .ux-port .sub-section .h4, .ux-port .sub-section .h5, .ux-port .sub-section .h6 {
-  text-align: end;
+@media screen and (min-width: 768px) {
+  .ux-port .sub-section h4, .ux-port .sub-section h5, .ux-port .sub-section h6, .ux-port .sub-section .h4, .ux-port .sub-section .h5, .ux-port .sub-section .h6 {
+    text-align: end;
+  }
 }
 
 .ux-port a {
@@ -154,5 +156,11 @@
 
 .ux-port .lead {
   font-weight: 800;
+}
+
+.ux-port .navbar-light .navbar-toggler, .ux-port .navbar-toggler:focus, .ux-port .navbar-toggler:hover {
+  border-color: #313131;
+  border-radius: 0;
+  border: 3px solid;
 }
 /*# sourceMappingURL=ux-port.css.map */
