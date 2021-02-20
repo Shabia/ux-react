@@ -2,13 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import {Jumbotron, Row, Col, Card, CardDeck, Container } from 'react-bootstrap';
 
-
+{/* 
 import il from './assets/IL.svg'
+import dc from './assets/DC.svg'
+*/}
 import fr from './assets/FR.svg'
 import sc from './assets/SC.svg'
 import tb from './assets/TB.svg'
 import cb from './assets/CB.svg'
-import dc from './assets/DC.svg'
+
 
 
 export const Home = () => (
