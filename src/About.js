@@ -3,9 +3,6 @@ import {Jumbotron, Row, Col, Container} from 'react-bootstrap'
 import selfie from './assets/selfie.jpg'
 
 
-import Gallery from "react-photo-gallery";
-import { photos } from "./components/photos";
-
 
 export const About = () => (
   
@@ -37,7 +34,7 @@ export const About = () => (
     <h2 className="mb-3">Non work stuff...</h2>
     <p>Art, photography, gym, fitness, climbing, travel, crypto, stocks, space... </p>
     
-    <Gallery photos={photos} />
+  
     </Col>
   </Row>
 </Container>

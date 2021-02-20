@@ -8,6 +8,10 @@ import scdraft2 from './../assets/SC-Draft2.png'
 import scflow from './../assets/SC-Flow.png'
 import scwire from './../assets/SC-Wire.png'
 import scvisual from './../assets/SC-Visual.png'
+import scstart from './../assets/SC-Start.gif'
+import scdate from './../assets/SC-Date.gif'
+import sctime from './../assets/SC-Time.gif'
+import scconfirm from './../assets/SC-Confirm.gif'
 
 import sc from './../assets/SC.svg'
 
@@ -145,14 +149,16 @@ export const Scheduling = () => (
     <Col md={8} className="sub-content"> 
     <h5 className="mb-3">Book via Available slots</h5>
     <p>User sees available slots in a range of dates/times </p>
-    <p>The bot ultra smart in having a conversation and responds pretty well</p>
+    <p>User clicks on slot and easily books</p>
     <img src={scdraft1} alt="Wireframe 1" className="img-fluid"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
-      <li>+ Simple basic UI</li>
-      <li>+ Use of natural language by bot</li>
-      <li>- Reponses from bot are too long</li>
-      <li>- Bot is not going to be that smart so we have to change how the responses work</li>
+      <li>+ Fast booking</li>
+      <li>+ Intelligent use of available time</li>
+      <li>- People sometimes want to book sessions longer than a week</li>
+      <li>- Start/times vary based on location</li>
+      <li>- Start/times vary based on event duration or class times</li>
+      <li>- Predicting the time slots is difficult</li>
     </ul>
      </Col>
   </Row>
@@ -160,23 +166,22 @@ export const Scheduling = () => (
   <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>Second Idea</h4></Col>
     <Col md={8} className="sub-content"> 
-    <h5 className="mb-3">Adding commands and reducing language complexity</h5>
-    <p>Main goal is to make interactions very simple with basic responses like yes/no so that it's easy to understand for the bot </p>
-    <p>The responses from the bot are simplified as we want to reduce time spent talking</p>
-    <p>Introduction of tasks as commands</p>
+    <h5 className="mb-3">A date and time calendar</h5>
+    <p>Traditional date and time calendar </p>
+    <p>User chooses dates and specific times manuall</p>
+   
     <img src={scdraft2} alt="Wireframe 2" className="img-fluid"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
-      <li>+ List of tasks useful</li>
-      <li>+ Option to handle error e.g. failed connection test with exit (reschedule)</li>
-      <li>+ Yes no answers make it quick</li>
-      <li>- How do you even use tasks quickly?</li>
+      <li>+ Full freedom of choice for date/time</li>
+      <li>- Long winded</li>
     </ul>
      </Col>
   </Row>
   <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border"> User Journey</h3></Col>
     <Col md={8} className="sub-content">
+      <p>We discussed the ideas and decided to go for idea two as the users needed full flexibility of date/time</p>
     <img src={scflow} alt=" flow diagram" className="img-fluid"/>
  
     </Col>
@@ -184,17 +189,13 @@ export const Scheduling = () => (
   <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Wireframes</h3></Col>
     <Col md={8} className="sub-content"> 
-    <h5 className="mb-3">Adding commands and reducing language complexity</h5>
-    <p>Main goal is to make interactions very simple with basic responses like yes/no so that it's easy to understand for the bot </p>
-    <p>The responses from the bot are simplified as we want to reduce time spent talking</p>
-    <p>Introduction of tasks as commands</p>
+   
+    <p>Mocked up a clearer version of the second design </p>
     <img src={scwire} alt="Wireframe 1" className="img-fluid"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
-      <li>+ List of tasks useful</li>
-      <li>+ Option to handle error e.g. failed connection test with exit (reschedule)</li>
-      <li>+ Yes no answers make it quick</li>
-      <li>- How do you even use tasks quickly?</li>
+      <li>+ All screens are clear</li>
+      <li>+ Only two screens as time picker overlays the calendar</li>
     </ul>
      </Col>
   </Row>
@@ -215,20 +216,17 @@ export const Scheduling = () => (
       <h4>Putting it all together now</h4>
       <p>Interactions designed in Figma</p>
     
-      {/*   <h5 className="mb-3">Start Using App</h5>
-        <img src={cbstart} alt="Start App" className="img-fluid mb-2 ux-gif"/> 
-        <h5 className="mb-3 mt-5">See Schedule</h5>
-        <img src={cbschedule} alt="See schedule" className="img-fluid mb-2 ux-gif"/> 
-        <h5 className="mb-3 mt-5">Search</h5>
-        <img src={cbssearch} alt="Search for demos" className="img-fluid mb-2 ux-gif"/> 
-        <h5 className="mb-3 mt-5">Test Connection</h5>
-        <img src={cbconnection} alt="Connection Test" className="img-fluid mb-2 ux-gif"/> 
-        <h5 className="mb-3 mt-5">Top Demos</h5>
-        <img src={cbtopdemo} alt="See top demos" className="img-fluid mb-2 ux-gif"/> 
-        <h5 className="mb-3 mt-5">Contact Support</h5>
-        <img src={cbcsupport} alt="Contact support" className="img-fluid mb-2 ux-gif"/> 
+       <h5 className="mb-3">Enter Calendar</h5>
+        <img src={scstart} alt="Enter Calendar" className="img-fluid mb-2 ux-gif"/> 
+        <h5 className="mb-3 mt-5">Select Date</h5>
+        <img src={scdate} alt="Select Date" className="img-fluid mb-2 ux-gif"/> 
+        <h5 className="mb-3 mt-5">Select Time</h5>
+        <img src={sctime} alt="Select Time" className="img-fluid mb-2 ux-gif"/> 
+        <h5 className="mb-3 mt-5">Confirm</h5>
+        <img src={scconfirm} alt="Confirm" className="img-fluid mb-2 ux-gif"/> 
+    
    
-   */}
+  
         <div>
     </div>
         
@@ -248,8 +246,7 @@ export const Scheduling = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Future</h3></Col>
     <Col md={8} className="sub-content">
-      <p>If in future we get a lot of requests we need to a way to navigate the requests and comments better but lets see how it goes.</p>
-      <p>If commenting get’s heavy we will need to better organise this</p>
+      <p>What things to say?</p>
 
 
     </Col>
