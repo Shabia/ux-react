@@ -56,7 +56,7 @@ export const dCloudAssistant = () => (
     <Col md={3} className="sub-section"><h3 className="title-border">Problem</h3></Col>
     <Col md={8} className="sub-content">
     <p>We found that people liked to schedule on the go and some super users used dcloud Apis to create their own 
-      scheduling bot to bypass the UI which they thought was long winded. When using the dCloud catalog we found 
+      scheduling bot to bypass the UI which they thought was long winded. When using the dCloud catalogue, we found 
       that a bunch of users created a command list via Cisco Webex API’s to be able to find content and schedule it.</p>
       <p>We thought it would be a nice experiment to build something official out for them and try out natural language</p>
 
@@ -156,7 +156,7 @@ export const dCloudAssistant = () => (
     <Col md={8} className="sub-content"> 
     <h5 className="mb-3">Basic idea to get started</h5>
     <p>User initiates the conversation by telling the bot what they want </p>
-    <p>The bot ultra smart in having a conversation and responds pretty well</p>
+    <p>The bot is smart in conversation by respondng like a human</p>
     <img src={cbwire1} alt="Wireframe 1" className="img-fluid"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
@@ -244,16 +244,16 @@ export const dCloudAssistant = () => (
  <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Thoughts</h3></Col>
     <Col md={8} className="sub-content">
-      <p>What didn't work</p>
-<p>What worked well in the project? </p>
+      <p>Designing the responses and nature of the bot was difficult so we realised going for a command based approach was probabky best</p>
+<p>We got feedback from the users  we spoke with initially who really liked our solution. </p>
 
     </Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Future</h3></Col>
     <Col md={8} className="sub-content">
-      <p>If in future we get a lot of requests we need to a way to navigate the requests and comments better but lets see how it goes.</p>
-      <p>If commenting get’s heavy we will need to better organise this</p>
+      <p>In future it would be good to use the api in any messaging platform such as Whatsapp, Messenger, Webex etc so users don't need to download a separate app.</p>
+      <p>Perhaps integrating with Siri could potentially be very useful.</p>
 
 
     </Col>

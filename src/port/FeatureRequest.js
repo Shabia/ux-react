@@ -249,10 +249,10 @@ export const FeatureRequest = () => (
     <Col md={8} className="sub-content">
       <p>As this is something new and an experiment we will see how many people use it. To start with we will have 10,000 users a 5% response rate is
          normal for surveys and user feedback on dCloud apps so we can measure it against that.</p>
-<p>What worked well in the project? - designing for myself  - this is unusual as everything in this team has been for products most people would never use. Figuring out problems was really fast.
-In hindsight, what would you do differently? - Look at how we manage and analyse overall feedback for completely new projects. Spend some time talking to the new potential users
-If you’d had more time, what would you have done? - A full on admin system for the requests
-What data do you have to quantify the results of the project? - At time of writing this has been broken down into stories and now being built.</p>
+<p>This is designed so the UX team can design better in future - which is unusual as as all products are for others. I believe this will help us identify problem areas fastrer.</p>
+<p> In hindsight I think we need manage and analyse overall feedback for completely new projects. Spend some time talking to the new potential users</p>
+<p> If there was more time a full on admin system for the requests would be nice but perhaps a bit overkill</p>
+<p> The business stakeholders the idea of the project was good but there might be other ways to get feedback </p>
 
     </Col>
     </Row>

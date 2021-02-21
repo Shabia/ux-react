@@ -237,16 +237,21 @@ export const Scheduling = () => (
  <section className="port-section" id="outcomes" >
  <h2 className="text-center">Lesson &amp; Outcomes</h2>
  <Row className="sect-row">
-    <Col md={3} className="sub-section"><h3 className="title-border">Throughts</h3></Col>
+    <Col md={3} className="sub-section"><h3 className="title-border">Thoughts</h3></Col>
     <Col md={8} className="sub-content">
-      <p>Things</p>
+      <p>Time was very constrained so design decisions may not have been the best. If there was more time I would have spent time talking to users to understand
+        more about when and under what circumstances they schedule. 
+         When presenting to users for feedback they liked the UI saying it is very 
+        easy to use and will more than likely save them time scheduling. 
+      </p>
 
     </Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Future</h3></Col>
     <Col md={8} className="sub-content">
-      <p>What things to say?</p>
+      <p>Were collecting data on how people use this and with more feedback we will make changes. I don't expect this is to be an excellent 
+        design as it was rushed developed really quickly so I expect to be making changes soon. </p>
 
 
     </Col>

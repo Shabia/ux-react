@@ -452,20 +452,32 @@ export const TopologyBuilder = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h5>First Iteration</h5></Col>
     <Col md={8} className="sub-content">
+    <p>Layout with fixed left full menu, search on page, curvy connections</p>
     <img src={tbwirea} alt="First general screen wireframe" className="img-fluid mb-2"/> 
-        <p>some info</p>
+       
         <h6>Thoughts &amp; discussion</h6>
-        <p>Some thoughts</p>
+        <ul className="list-unstyled">
+      <li>+ Nice overall layout, everything the user needs to see is on screen</li>
+      <li>+ Side panels are contextual and useful, tabs enable good categerisation of information</li>
+      <li>- Left menu and search bar takes up a lot of space resulting in the actual diagram to be very small</li>
+      <li>- Aesthetics of curvy lines questionable</li>
+    </ul>
 
       </Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h5>Second Iteration</h5></Col>
     <Col md={8} className="sub-content">
+    <p>Used floating pill menu nav with search and zoom panel to give more space to the diagram</p>
+    <p>Side panel shows multiple opened items as tabs</p>
     <img src={tbwireb} alt="Second general screen wireframe" className="img-fluid mb-2"/> 
-        <p>some info</p>
+       
         <h6>Thoughts &amp; discussion</h6>
-        <p>Some thoughts</p>
+        <ul className="list-unstyled">
+      <li>+ Floating items definitely save a lot of space</li>
+      <li>+ Tabbing side panels also makes use of space and users loved the idea of being able to open multiple devices they want configuring</li>
+      
+    </ul>
 
       </Col>
     </Row>
@@ -473,14 +485,20 @@ export const TopologyBuilder = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>Search</h4></Col>
     <Col md={8} className="sub-content"> 
-    <p>When presenting the search ideas we decided as a team the modal search was probably the most effective. </p>
-    <h5>Search flow</h5>
+    <p>When presenting the search ideas we decided as a team the modal search was probably the most effective. Search is opened by clicking the search 
+      icon on the pill menu </p>
+    <h5>Flow</h5>
+    <p>Mocked up flow diagram for how search would work</p>
     <img src={tbwflowsearch} alt="Search Flow" className="img-fluid mb-2"/> 
-    <p>some info</p>
+    <h5>Search Popup UI</h5>
+    <p>Matched items show up with detailed info to help user make right choice</p>
     <img src={tbwiresearch} alt="Search Modal" className="img-fluid mb-2"/> 
     
         <h6>Thoughts &amp; discussion</h6>
-        <p>Some thoughts</p>
+        <ul className="list-unstyled">
+      <li>+ Info on the items very useful</li>
+      <li>+ Opening of selected device in a side panel so user can configure had really good feedback from users and business stakeholders </li>
+    </ul>
 
       </Col>
       
@@ -555,22 +573,23 @@ export const TopologyBuilder = () => (
  <section className="port-section" id="outcomes" >
  <h2 className="text-center">Lesson &amp; Outcomes</h2>
  <Row className="sect-row">
-    <Col md={3} className="sub-section"><h3 className="title-border">Throughts</h3></Col>
+    <Col md={3} className="sub-section"><h3 className="title-border">Thoughts</h3></Col>
     <Col md={8} className="sub-content">
-      <p>As this is something new and an experiment we will see how many people use it. To start with we will have 10,000 users a 5% response rate is
-         normal for surveys and user feedback on dCloud apps so we can measure it against that.</p>
-<p>What worked well in the project? - designing for myself  - this is unusual as everything in this team has been for products most people would never use. Figuring out problems was really fast.
-In hindsight, what would you do differently? - Look at how we manage and analyse overall feedback for completely new projects. Spend some time talking to the new potential users
-If you’d had more time, what would you have done? - A full on admin system for the requests
-What data do you have to quantify the results of the project? - At time of writing this has been broken down into stories and now being built.</p>
+      <p>This project was very complex, lot's to figure out/solve and required many cycles of iterations, feedback and user testing. This resulted in a really thought out and designed product</p>
+<p>The team worked really well together designing this remotely. The collaboration cycles and daily ux discussions provided so much value. User seemed really happy with what we designed which
+  is excellent news for us. </p>
+<p>If there was more time and we weren't in a pandemic it would have been useful to see these topology confirgations work in real life then we would have better
+  understood how such product translates to real world use. Also maybe a crash course on computer networking prior could have helped understand things more.
+</p>
 
     </Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Future</h3></Col>
     <Col md={8} className="sub-content">
-      <p>If in future we get a lot of requests we need to a way to navigate the requests and comments better but lets see how it goes.</p>
-      <p>If commenting get’s heavy we will need to better organise this</p>
+      <p>As this get's released to new user groups we will find out other ways and things these groups want to do so we will hold 
+        feedback sessions and add new designs and features</p>
+      <p>Overall excited to launch this.</p>
 
 
     </Col>
