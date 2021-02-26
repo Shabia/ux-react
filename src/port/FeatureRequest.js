@@ -59,12 +59,12 @@ export const FeatureRequest = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Problem</h3></Col>
     <Col md={8} className="sub-content">
-    <p>Repurposing Topology builder for a new user groups who have never used the system before but will need to because of losing their offices 
-        to remote work. We have an idea of these user’s day to day activity but to learn better on how to add more user specific features we decided 
-        some sort of feedback system is required.</p>
-    <p>`Find out what is missing from Topology builder especially from large new types of people such as Cisco sellers, 
-      partners and sales engineers, whom is it missing for and why they’d like it. This will help us going forward to design features 
-      for new specific groups of users.</p>
+    <p>The task was to repurpose Topology Builder for new user groups unfamiliar with the technology but now forced to use it by the Covid Pandemic. 
+      We had a basic awareness of these users’ day to day activities, 
+      but it was necessary to acquire more detailed information, and as such a system for gathering feedback was put in place  .</p>
+    <p>It was essential to find out what was missing from Topology Builder. Particular focus was directed towards large scale users such as Cisco sellers, 
+      partners and sales engineers. 
+      Details of what was missing and who was affected were gathered, and this information was factored into successive developments  .</p>
 
     </Col>
     </Row>
@@ -139,10 +139,9 @@ export const FeatureRequest = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Scope &amp; Constraints</h3></Col>
     <Col md={9} className="sub-content">
-      <p>Personally put this forward as I noticed a problem with knowing what the gaps between user use cases were. 
-         Prefer talking  users before starting any 
-        project but at this present moment can’t contact SE’s and partners due to business reasons so designing f
-        or unknown use cases is requires a lot of guessing.</p>
+      <p>I strongly advocated this project as I personally noticed a problem knowing what the gaps between user cases were. 
+        I would of course liked to have consulted users before starting this project, 
+        but the circumstances at the time meant contacting SEs and partners was not an option .</p>
     </Col>
     </Row>
  </section>
@@ -152,12 +151,12 @@ export const FeatureRequest = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Idea Generation</h3></Col>
     <Col md={8} className="sub-content">
-      <p>Designers talked about the features we wanted and how best to capture the info. 
-        We wanted to be basic and give us the info back without having the need to analyse requests.</p>
+      <p>As designers we talked about the features we wanted and how best to capture the info. 
+        We wanted to keep things as simple as possible to maximise the return of information without participants having to analyse requests.</p>
         <ul>
-          <li>Organised ideas into buckets - Important/Nice to have/Overkill</li>
+          <li>Organised ideas into buckets in order of importance </li>
           <li>Reasons for ideas - Why</li>
-          <li>Two user types - admin (us) topolgy users</li>
+          <li>Two user types - admin (us) Topology users</li>
         </ul>
         <img src={frIdea} alt="Feature Request Ideas Board" className="img-fluid"/> 
     </Col>
@@ -184,10 +183,8 @@ export const FeatureRequest = () => (
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h5>Thoughts &amp; discussion</h5></Col>
-    <Col md={8} className="sub-content"><p>Thoughts screen is a bit busy
-        We want to reduce submissions of the same thing so need a way to show other peoples submission
-        Maybe commenting on submissions and for explaining any further views - encourages discussions and conversations
-        A way to show we are working on the submissions - keeps customers engaged and happy</p></Col>
+    <Col md={8} className="sub-content"><p>Thoughts screen was unnecessarily busy. We wanted to reduce submissions of the same substance and so needed a way to display other people’s submissions. 
+      We postulated that commenting on submissions and explaining further views would encourage discussions and conversations. </p></Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>User view Design 2</h4></Col>
@@ -209,10 +206,10 @@ export const FeatureRequest = () => (
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h5>Thoughts &amp; discussion</h5></Col>
-    <Col md={8} className="sub-content"><p>Thoughts screen is a bit busy
-        We want to reduce submissions of the same thing so need a way to show other peoples submission
-        Maybe commenting on submissions and for explaining any further views - encourages discussions and conversations
-        A way to show we are working on the submissions - keeps customers engaged and happy</p></Col>
+    <Col md={8} className="sub-content"><p>
+      Screen is less cluttered. Center aligned content makes for easy scanning. Commenting and replying make it possible to 
+      track which ones people are talking about and also give us the ability to capture more insights of the problem. Commenting is probably not a minimum feature.
+      </p></Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Interactions &amp; Visuals</h3></Col>
@@ -247,12 +244,13 @@ export const FeatureRequest = () => (
  <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Throughts</h3></Col>
     <Col md={8} className="sub-content">
-      <p>As this is something new and an experiment we will see how many people use it. To start with we will have 10,000 users a 5% response rate is
-         normal for surveys and user feedback on dCloud apps so we can measure it against that.</p>
-<p>This is designed so the UX team can design better in future - which is unusual as as all products are for others. I believe this will help us identify problem areas fastrer.</p>
-<p> In hindsight I think we need manage and analyse overall feedback for completely new projects. Spend some time talking to the new potential users</p>
-<p> If there was more time a full on admin system for the requests would be nice but perhaps a bit overkill</p>
-<p> The business stakeholders the idea of the project was good but there might be other ways to get feedback </p>
+      <p>This is a new project and as such it is imperative to monitor usage and process feedback. We will initially have 10,000 users, 
+        and can expect at least a 5% response rate as is normal for dCloud apps user surveys and feedback.</p>
+<p>Had an admin system been in place to process requests we could have worked more efficiently.</p>
+<p> In hindsight I think we need manage and analyse overall feedback for completely new projects. Spend some time talking to the new potential users.</p>
+<p> Any future increase in requests will pose administrative challenges which must be dealt with competently and decisively. 
+  A well-resourced system should be in place to meet this challenge  </p>
+<p> The business stakeholders thought the idea of the project was good but they suggested there might be other ways to get feedback. </p>
 
     </Col>
     </Row>

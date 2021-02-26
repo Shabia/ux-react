@@ -77,17 +77,17 @@ export const TopologyBuilder = () => (
     <Col md={3} className="sub-section"><h3 className="title-border">Problem</h3></Col>
     <Col md={8} className="sub-content">
   
-      <p>The current version of Topology builder was built on the fly with programmers and demo developers with no UX or further 
-        use cases involved. The goal then was to make a tool for demo developers but now with the world going remote and more people 
-        relying on designing solutions remotely we need to quickly redesign Topology builder and include new features for new types of users.  </p>
+      <p>The current version of Topology Builder was built ad hoc by Programmers and Demo Developers with no UX or further use cases involved. 
+        As such, the goal was to make a tool for Demo Developers, but the rapid move towards remote work and the increasing reliance 
+        on remotely designed solutions meant we had to quickly redesign Topology builder and include new features for new types of users.    </p>
 
-        <h4 className="mt-4 mb-3">Redesign Topology builder </h4>
+        <h4 className="mt-4 mb-3">Redesign Topology Builder  </h4>
         <ol>
-          <li>Get to feature parity with v1</li>
+          <li>Get to feature parity with V1</li>
           <li>Make it more user friendly by solving common user problems</li>
-          <li>Complex diagrams need to be easily visualised </li>
-          <li>Ability to see full picture including external entities </li>
-          <li>For a complete diagram need to draw non functioning objects</li>
+          <li>Make complex diagrams easy to visualise</li>
+          <li>Enable full picture visibility including external entities </li>
+          <li>Draw non-functioning objects for complete diagram</li>
           <li>On board new user types</li>
         </ol>
     </Col>
@@ -104,7 +104,7 @@ export const TopologyBuilder = () => (
       <Card.Title>dCloud Operations, Admins, Demo Developers,  Lab Builders, System Engineers
  </Card.Title>
       <Card.Text>
-      Look at the reported problems and design the solutions
+      Design and build computer topologies, networks, solutions and showcase them to customers
       </Card.Text>
     </Card.Body>
   </Card>
@@ -156,13 +156,13 @@ export const TopologyBuilder = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Collaboration Style</h3></Col>
     <Col md={9} className="sub-content">
-    <p><strong>Daily  UX check-ins</strong> - going through previous day’s work, getting feedback from each other, discussing problems and working on insights.</p>
+    <p><strong>Daily  UX check-ins</strong> - Reviewing previous days’ work, giving and receiving feedback, discussing problems and working on insights.</p>
 
-<p><strong>Bi-weekly project check-ins</strong> - product owner, software engineers, software team lead, project manager and UX designers. 
-  Show the current work in progress, ask tough questions and get sign off on designed solutions. </p>
+<p><strong>Bi-weekly project check-ins</strong>- Product Owner, Software Engineers, Software Team Lead, Project Manager and UX Designers. 
+Presenting work in progress, asking tough questions and getting approval of designed solutions </p>
 
-<p><strong>Kick off meetings </strong>- All stakeholders working remotely and multi disciplinary teams consisting of Tech Leads, 
-  Product Managers, Project Managers, Demo Developers, Programme Leads, Software Engineers and UX designers </p>
+<p><strong>Kick off meetings </strong>- All stakeholders working remotely, Product Managers, Project Managers, Demo Developers, Programme Leads, 
+Software Engineers, Multi-Disciplinary teams consisting of Tech Leads, UX designers  </p>
    
     
     </Col>
@@ -170,9 +170,9 @@ export const TopologyBuilder = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Scope &amp; Constraints</h3></Col>
     <Col md={9} className="sub-content">
-    <p>Designing a system for people do not yet use it with no access to them </p>
-      <p>A massive project with a very small budget - two designers</p>
-      <p>Requirements keep changing on the fly</p>
+    <p>To design a system for future users without access to them </p>
+      <p>A huge project with a small budget (two Designers)</p>
+      <p>Constantly and rapidly changing requirements</p>
   </Col>
     </Row>
  </section>
@@ -183,8 +183,8 @@ export const TopologyBuilder = () => (
     <Col md={3} className="sub-section"><h3 className="title-border">Analysis</h3></Col>
     <Col md={8} className="sub-content">
   
-      <p>Analysed current app by talking to the previous developers and current users for a walk through</p>
-      <p>Mapped every interaction to understand how it all fit together</p>
+      <p>Analysing current app by consulting previous developers and current users</p>
+      <p>Mapping all interactions to better understand its structure</p>
       <img src={tbflowold} alt="Old TB Flow Diagram" className="img-fluid mb-2"/> 
   
     </Col>
@@ -192,47 +192,50 @@ export const TopologyBuilder = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Talk to users</h3></Col>
     <Col md={9} className="sub-content">
-<p>Upon developing a background understanding of networking and the current app we decided that to make a better product we should 
-  interview the users, find out pain points or potential new features </p>
+    <p>Having gained a background understanding of networking and the current app, we interviewed the users to 
+      find out pain points and potential new features. </p>
     </Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h5>Interviews</h5></Col>
-    <Col md={8} className="sub-content"><p>Set up calls for 5 different users to talk to us about their  job role, why they 
-      used topology builder and how they used it and walk us through how they used the app, 
-      what pain points they had and any kind of features that would make things easier for them.</p></Col>
+    <Col md={8} className="sub-content"><p>Organised calls for 5 different users to walk us through how they used the app and to discuss their job role, 
+      why and how they used topology builder,  what pain points they had, and any features that would make things easier for them.</p></Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h5>Survey</h5></Col>
-    <Col md={8} className="sub-content"><p>Did a two question opened survey. Kept it brief to encourage people to fill it
-       out and open ended so to gather insights without pushing them into thought corners and find out what the actual 
-      good/bad points were..</p>
+    <Col md={8} className="sub-content"><p>Carried out a two-question survey. Kept it brief to maximise participation, and open-ended to avoid 
+      pushing participants into thought corners.</p>
       <ul>
-        <li>What do you like about it</li><li>What do you dislike about it.</li>
+        <li>What do you like about it?</li><li>What do you dislike about it?</li>
       </ul>
       </Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h5>Findings</h5></Col>
     <Col md={8} className="sub-content">
+    <oblique> A small selection of findings</oblique>
     <ul>
-        <li>Can’t visualise vpod gateway- Can’t depict external entities - current one doesn’t show full picture of the solution</li>
-        <li>Have to configure all items - when using VM templates no settings come with it just the name of the server</li>
-        <li>Can’t see how big the demo is getting, storage size</li>
-        <li>When running demo it can use up a lot of RAM</li> <li>default Icons too vague and fit for purpose</li>
-        <li>Might want to demo an alternate icon which fits design better</li>
-        <li>Diagrams can get very big, how to see things without a big screen</li>
-        <li>No way to collaborate on building the diagram</li>
-        <li>Diagrams are very static and no way to able to use it as diagramming tool</li>
+        <li>Vpod gateway not visible</li>
+        <li>External entities cannot be depicted</li>
+        <li>Current version does not show full picture of the solution</li>
+        <li>All items must be configured</li>
+        <li>No accompanying settings with VM templates – only name of the server</li>
+        <li>Fluctuations in demo size not visible</li>
+        <li>Storage size</li>
+        <li>Excessive RAM use while running demo</li>
+        <li>Better fitting alternate icon desirable</li>
+        <li>Large diagrams create screening issues</li>
+        <li>No facility for collaboration on building the diagram</li>
+        <li>Diagrams are static and it cannot be used as a diagramming tool</li>
         <li>No way to find items</li>
-        </ul>
-        <oblique>* A selection of findings</oblique>
+      </ul>
+        
     </Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Define Requirements</h3></Col>
     <Col md={8} className="sub-content">
-      <p>Looked at what the business requiremnets were, listed user problems and came up with some solution ideas. </p>
+      <p>Assessed the business requirements, listed user problems and proposed solutions. </p>
         <strong>A selection of problems:</strong>
 <Table responsive="sm" striped bordered >
       <thead>
@@ -244,23 +247,23 @@ export const TopologyBuilder = () => (
       <tbody>
         <tr>
           <td>Hard to find items</td>
-          <td>Some sort of map type search</td>
+          <td>Some kind of map search</td>
         </tr>
         <tr>
-          <td>Can't make out how things connect</td>
-          <td>Figure out how to make lines more clear</td>
+          <td>Can't see how things connect</td>
+          <td>Make lines clearer</td>
         </tr>
         <tr>
-          <td>Too much on screen for complex topolgies</td>
+          <td>Screen too cluttered for complex topologies</td>
           <td>Pan + Zoom, Navigator</td>
         </tr>
         <tr>
           <td>Can't display external entities for a full diagram</td>
-          <td>Figure out how to show external entities</td>
+          <td> Find way to show external entities</td>
         </tr>
         <tr>
-          <td>Sometimes diagram need non functioning items</td>
-          <td>Ability to draw/add images</td>
+          <td>Diagram requires non-functioning items</td>
+          <td> Enable drawing and adding images</td>
         </tr>
       </tbody>
     </Table>
@@ -273,7 +276,7 @@ export const TopologyBuilder = () => (
     <Alert variant="primary">
       <Alert.Heading>Hey, this project is pretty big!</Alert.Heading>
       <p>
-        I'm sure you don't want to read a dissertation so I've selected some ui parts for each design type instead of showing everything.
+      I'm sure you don't want to read a dissertation, so rather than show everything I've selected some UI parts for each design type.
       </p>
     </Alert>
       </Col>
@@ -283,9 +286,9 @@ export const TopologyBuilder = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Information Architecture</h3></Col>
     <Col md={8} className="sub-content">
-      <p>To keep track and have a reference whilst prototyping the flow diagram was redrawn with changes in place. 
-        On overview of user movement through the app I redrew the flow digram with proposed improvements to the flow of forms/tasks to make better sense.
-        </p> <p>The flow diagrams adapted as the design and information architecture changed through prototyping</p>
+      <p>In order to keep track and have a reference whilst prototyping, the flow diagram was redrawn with changes in place. 
+        After analysing user movement through the app, I redrew the flow diagram with improvements to the flow of forms/tasks.
+        </p> <p>The flow diagrams adapted as the design and information architecture changed through prototyping.</p>
         </Col>
         </Row>
         <Row className="sect-row">
@@ -307,8 +310,7 @@ export const TopologyBuilder = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Rapid Prototyping</h3></Col>
     <Col md={8} className="sub-content">
-      <p>Used iPad + Adobe Sketch to mockup and draw a few areas. Helped visualise ideas on hard sections and make easy to 
-        wireframe prototype later.</p>
+      <p>Used iPad and Adobe Sketch to mock-up and draw some areas. Helped visualise ideas on hard sections and make easy to wireframe prototype later.</p>
 
     </Col>
     </Row>
@@ -331,8 +333,7 @@ export const TopologyBuilder = () => (
     <ul className="list-unstyled">
       <li>+ Can float over diagram</li>
       <li>+ Takes up small amount of screen space</li>
-      <li>+ Takes up small amount of screen space</li>
-      <li>- Time to learn icon meaning</li>
+      <li>- Might take time to learn icon meaning</li>
     </ul>
     
      
@@ -367,7 +368,7 @@ export const TopologyBuilder = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>Support large diagrams</h4></Col>
     <Col md={8} className="sub-content"> 
-    <p>Some ideas so the diagram can be as large as needed whilst having complete control of position</p>
+    <p>Some ideas so the diagram can be as large as required whilst having complete control of position.</p>
     <h5 className="mb-3">Navigator Zoom Tool</h5>
     <img src={tbdrawzoomnav} alt="Border" className="img-fluid mb-2"/> 
     <p>Pros / Cons</p>
@@ -386,8 +387,8 @@ export const TopologyBuilder = () => (
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
       <li>+ These interactions are found in other desktop apps that support drawing and are quite intuative</li>
-      <li>+ Box around area shows what part of the diagram is on screen</li>
-      <li>- Users who never have used design apps</li>
+      <li>+ Box around area on the navigator shows what part of the diagram is on screen</li>
+      <li>- Users who never have used design apps may take some time getting used to it</li>
  
     </ul>
    
@@ -419,17 +420,17 @@ export const TopologyBuilder = () => (
     <img src={tbdrawsearchc} alt="Third Search design" className="img-fluid mb-2"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">=
-      <li>- Having a search state that needs clearning probably adds another layer of complexity</li>
+      <li>- Having a search state that needs clearing probably adds another layer of complexity</li>
       <li>- Greying out will confuse with hidden items</li>
     </ul>
     <h5 className="mb-3 mt-5">Idea 4</h5>
-    <p>Search modal which shows results with info &gt; user selects a single result which is highlighted and setting opened.</p>
+    <p>Search model which shows results with info > user selects a single result which is highlighted and setting opened</p>
     <img src={tbdrawsearchd} alt="Fourth Search design" className="img-fluid mb-2"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
       <li>+ Gives user a list choice with info</li>
-      <li>+ Leads them to pick the likely correct result result</li>
-      <li>+ One side panel open rather than multiple potential</li>
+      <li>+ Leads them to pick the likely correct result</li>
+      <li>+ One side panel open rather than multiple potential panels</li>
     </ul>
   
       </Col>
@@ -438,7 +439,7 @@ export const TopologyBuilder = () => (
     <Col md={3} className="sub-section"><h3 className="title-border">Wireframes</h3></Col>
     <Col md={8} className="sub-content">
       
-        <p>Wireframes being discused include ui parts from above pen prototypes</p>
+        <p>Wireframes being discussed include UI parts from above pen prototypes</p>
   
     </Col>
     </Row>
@@ -458,7 +459,7 @@ export const TopologyBuilder = () => (
         <h6>Thoughts &amp; discussion</h6>
         <ul className="list-unstyled">
       <li>+ Nice overall layout, everything the user needs to see is on screen</li>
-      <li>+ Side panels are contextual and useful, tabs enable good categerisation of information</li>
+      <li>+ Side panels are contextual and useful, tabs enable good categorisation of information</li>
       <li>- Left menu and search bar takes up a lot of space resulting in the actual diagram to be very small</li>
       <li>- Aesthetics of curvy lines questionable</li>
     </ul>
@@ -485,8 +486,8 @@ export const TopologyBuilder = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>Search</h4></Col>
     <Col md={8} className="sub-content"> 
-    <p>When presenting the search ideas we decided as a team the modal search was probably the most effective. Search is opened by clicking the search 
-      icon on the pill menu </p>
+    <p>When presenting the search ideas, we decided as a team the modal search was probably the most effective. Search is opened by 
+      clicking the search icon on the pill menu.</p>
     <h5>Flow</h5>
     <p>Mocked up flow diagram for how search would work</p>
     <img src={tbwflowsearch} alt="Search Flow" className="img-fluid mb-2"/> 
@@ -497,7 +498,7 @@ export const TopologyBuilder = () => (
         <h6>Thoughts &amp; discussion</h6>
         <ul className="list-unstyled">
       <li>+ Info on the items very useful</li>
-      <li>+ Opening of selected device in a side panel so user can configure had really good feedback from users and business stakeholders </li>
+      <li>+ Opening of selected device in a side panel so user can configure generated positive feedback from users and business stakeholders</li>
     </ul>
 
       </Col>
@@ -508,21 +509,22 @@ export const TopologyBuilder = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Visuals</h3></Col>
     <Col md={8} className="sub-content">
-      <p>Some problems needed to be solved using ui design</p>
+      <p>Some problems needed to be solved using UI design</p>
      </Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>Connections</h4></Col>
     <Col md={8} className="sub-content">
      
-        <p>On complex diagram it was hard to tell which device connected to which VLAN as they were all the same</p>
+        <p>On complex diagrams it was hard to tell which device connected to which VLAN as they were all the same</p>
         <img src={tblinesblue} alt="Lines same colour" className="img-fluid mb-2"/> 
 
         <h5 className="mb-3 mt-5">Solution</h5>
-        <p>After some discussion and thoughts we were inspired by the London Tube map and how clearly you can 
-          see the different tube lines by use of colour and line patterns. Adopting something like this into the diagram helped distinguish connections better</p>
+        <p>After some discussion we were inspired by the London Tube map and its use of colour and pattern to clearly present the different tube lines. 
+          Adopting a similar approach vis-à-vis the diagram led to improved distinctions between connections</p>
         <img src={tblinescolor} alt="Lines different colour" className="img-fluid mb-2"/> 
-        <p>By alternating line colours there is clarity of how devices and VLANS connect.</p> <p> For line types dashes and dots were introduced:</p>
+        <p>By alternating line colours there is clarity of how devices and VLANS connect.</p> 
+        <p> For line types dashes and dots were introduced:</p>
         <img src={tblinestype} alt="Lines type" className="img-fluid mb-2"/> 
 
      </Col>
@@ -532,7 +534,7 @@ export const TopologyBuilder = () => (
     <Col md={3} className="sub-section"><h4>States</h4></Col>
     <Col md={8} className="sub-content">
      
-        <p>Device icons have different visual states for errors, connections, configuration types etc. Came up with a few types of states that can be used</p>
+        <p>Device icons have different visual states for errors, connections, configuration types etc. I developed several types of states that can be used.</p>
         <img src={tbiconstates} alt="Various icon states" className="img-fluid mb-2"/> 
        
      </Col>
@@ -541,7 +543,7 @@ export const TopologyBuilder = () => (
     <Col md={3} className="sub-section"><h3 className="title-border">Final Design</h3></Col>
     <Col md={8} className="sub-content">
      
-        <p>After many iterations and feedback from the business the final visual design evolved to this: </p>
+        <p>After many iterations and feedback from the business stakeholders the final visual design evolved to this </p>
         <img src={tbdesignfinal} alt="Final design" className="img-fluid mb-2"/> 
        
      </Col>
@@ -549,7 +551,7 @@ export const TopologyBuilder = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>Interactions</h4></Col>
     <Col md={8} className="sub-content">
-      <p>A selection of interactions of ui parts</p>
+      <p>A selection of interactions of UI parts</p>
   
        
         <h5 className="mb-3">Menu Function</h5>
@@ -575,11 +577,12 @@ export const TopologyBuilder = () => (
  <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Thoughts</h3></Col>
     <Col md={8} className="sub-content">
-      <p>This project was very complex, lot's to figure out/solve and required many cycles of iterations, feedback and user testing. This resulted in a really thought out and designed product</p>
-<p>The team worked really well together designing this remotely. The collaboration cycles and daily ux discussions provided so much value. User seemed really happy with what we designed which
-  is excellent news for us. </p>
-<p>If there was more time and we weren't in a pandemic it would have been useful to see these topology confirgations work in real life then we would have better
-  understood how such product translates to real world use. Also maybe a crash course on computer networking prior could have helped understand things more.
+      <p>This project was very complex and required many cycles of iterations, feedback and user testing.
+         The end result was a well thought out and designed product</p>
+<p>The team worked well together in designing this remotely. The collaboration cycles and daily UX discussions provided a great deal of value. 
+  Users were very happy with our design which was very rewarding for the team. </p>
+<p>Given more time and better circumstances (this project took place during Covid 19 lockdown), it would have been useful to see the topology configurations work in real life. 
+  Had this been the case, the team would have better understood how such a product translates into real world use.
 </p>
 
     </Col>
@@ -587,11 +590,8 @@ export const TopologyBuilder = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Future</h3></Col>
     <Col md={8} className="sub-content">
-      <p>As this get's released to new user groups we will find out other ways and things these groups want to do so we will hold 
-        feedback sessions and add new designs and features</p>
-      <p>Overall excited to launch this.</p>
-
-
+      <p>As this product is released to new user groups, we will process the user feedback and add new designs and features accordingly.</p>
+      <p>Overall, I am very excited to launch this.</p>
     </Col>
     </Row>
  </section>

@@ -54,8 +54,8 @@ export const Scheduling = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Problem</h3></Col>
     <Col md={8} className="sub-content">
-    <p>A lot of people like to schedule content from their phones but the current UI for this unaavilable on mobile</p>
-    <p>Need a simple booking app to find content fast and schedule it</p>
+    <p>A lot of people like to schedule content from their phones, but the current UI for this is not suitable for mobiles. </p>
+    <p>There’s a huge need for a simple booking app to quickly find content and schedule it.</p>
 
     </Col>
     </Row>
@@ -120,7 +120,7 @@ export const Scheduling = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Scope &amp; Constraints</h3></Col>
     <Col md={9} className="sub-content">
-      <p>Deliver in one week.</p>
+      <p>Deliver in one week. This will mean we skip some steps we'd normally take such as talking to users.</p>
     </Col>
     </Row>
  </section>
@@ -130,11 +130,11 @@ export const Scheduling = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Investigate Analytics</h3></Col>
     <Col md={8} className="sub-content">
-      <p>Since the deadline is extremely short we looked at analytics to see how people scheduled from mobile and what devices they were using</p>
+      <p>The deadline was extremely short, so we looked at analytics to see how people scheduled from their mobiles and what devices they were using.</p>
         <ul>
-          <li>Primary device was iPhone by a big margin</li>
-          <li>A lot of drop offs on calendar page</li>
-          <li>Something else</li>
+          <li>The iPhone was the most widely used device by a large margin</li>
+          <li>38% we're using their phones on the scheduling screen</li>
+          <li>Users dropped off after scheduling</li>
         </ul>
        
     </Col>
@@ -147,7 +147,7 @@ export const Scheduling = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>First Idea</h4></Col>
     <Col md={8} className="sub-content"> 
-    <h5 className="mb-3">Book via Available slots</h5>
+    <h5 className="mb-3">Book via available slots</h5>
     <p>User sees available slots in a range of dates/times </p>
     <p>User clicks on slot and easily books</p>
     <img src={scdraft1} alt="Wireframe 1" className="img-fluid"/> 
@@ -155,9 +155,9 @@ export const Scheduling = () => (
     <ul className="list-unstyled">
       <li>+ Fast booking</li>
       <li>+ Intelligent use of available time</li>
-      <li>- People sometimes want to book sessions longer than a week</li>
-      <li>- Start/times vary based on location</li>
-      <li>- Start/times vary based on event duration or class times</li>
+      <li>- People sometimes want to book sessions which are longer than a week in duration</li>
+      <li>- Start times vary based on location</li>
+      <li>- Start times vary based on event duration or class times</li>
       <li>- Predicting the time slots is difficult</li>
     </ul>
      </Col>
@@ -167,8 +167,8 @@ export const Scheduling = () => (
     <Col md={3} className="sub-section"><h4>Second Idea</h4></Col>
     <Col md={8} className="sub-content"> 
     <h5 className="mb-3">A date and time calendar</h5>
-    <p>Traditional date and time calendar </p>
-    <p>User chooses dates and specific times manuall</p>
+    <p>Traditional date and time calendar. </p>
+    <p>User chooses dates and specific times manually.</p>
    
     <img src={scdraft2} alt="Wireframe 2" className="img-fluid"/> 
     <p>Pros / Cons</p>
@@ -181,7 +181,7 @@ export const Scheduling = () => (
   <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border"> User Journey</h3></Col>
     <Col md={8} className="sub-content">
-      <p>We discussed the ideas and decided to go for idea two as the users needed full flexibility of date/time</p>
+      <p>We discussed the ideas and decided to go for idea two as the users needed full flexibility in relation to the date/time</p>
     <img src={scflow} alt=" flow diagram" className="img-fluid"/>
  
     </Col>
@@ -239,19 +239,17 @@ export const Scheduling = () => (
  <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Thoughts</h3></Col>
     <Col md={8} className="sub-content">
-      <p>Time was very constrained so design decisions may not have been the best. If there was more time I would have spent time talking to users to understand
-        more about when and under what circumstances they schedule. 
-         When presenting to users for feedback they liked the UI saying it is very 
-        easy to use and will more than likely save them time scheduling. 
+      <p>Time was constrained and this was reflected in design decisions. Had this not been the case,
+         I would have spent time talking to users to understand more about when and how they schedule.
       </p>
-
+<p>Feedback from users told us they liked the usability of the UI and are impressed by its time saving features
+</p>
     </Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Future</h3></Col>
     <Col md={8} className="sub-content">
-      <p>Were collecting data on how people use this and with more feedback we will make changes. I don't expect this is to be an excellent 
-        design as it was rushed developed really quickly so I expect to be making changes soon. </p>
+      <p>We are currently collecting data on how people use this product, and after processing feedback we will make appropriate changes.  </p>
 
 
     </Col>

@@ -55,10 +55,10 @@ export const dCloudAssistant = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Problem</h3></Col>
     <Col md={8} className="sub-content">
-    <p>We found that people liked to schedule on the go and some super users used dcloud Apis to create their own 
-      scheduling bot to bypass the UI which they thought was long winded. When using the dCloud catalogue, we found 
-      that a bunch of users created a command list via Cisco Webex API’s to be able to find content and schedule it.</p>
-      <p>We thought it would be a nice experiment to build something official out for them and try out natural language</p>
+    <p>Our research showed that people like to schedule on the go. It also showed that super users use dCloud Apps to create their own s
+      cheduling bots to bypass what they regard as long winded UI. While using the dCloud catalogue, we found that many users created a 
+      command list via Cisco Webex APIs in order to find content and schedule it. 
+      We thought it would be nice to build something for them.</p>
 
     </Col>
     </Row>
@@ -73,7 +73,7 @@ export const dCloudAssistant = () => (
     <Card.Body className="text-center">
       <Card.Title>dCloud super users, Sales Engineers, Demo developers</Card.Title>
       <Card.Text>
-      Highly tehcnical individuals who often use APIs to skip the UI
+      Highly technical individuals who often use APIs to skip the UI by building their own ui with shortcuts or command prompts
       </Card.Text>
     </Card.Body>
   </Card>
@@ -120,7 +120,7 @@ export const dCloudAssistant = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Scope &amp; Constraints</h3></Col>
     <Col md={9} className="sub-content">
-      <p>This project is a design experiment to see other ways we can use dCloud.</p>
+      <p>This project is a design experiment to establish new ways of using dCloud.</p>
     </Col>
     </Row>
  </section>
@@ -130,11 +130,11 @@ export const dCloudAssistant = () => (
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Talk to Users</h3></Col>
     <Col md={8} className="sub-content">
-      <p>Learn what kind of tasks they typically perform and why they do it</p>
+      <p>Learn what kind of tasks users typically perform and why they do it.</p>
       <h5 className="mb-3 mt-5">Typical Tasks</h5>
         <ul>
           <li>Find a demo </li>
-          <li>Schedule content - date time</li>
+          <li>Schedule content - date/time</li>
           <li>Find out what they have booked</li>
           <li>Test internet connection</li>
           <li>See most scheduled content</li>
@@ -155,15 +155,15 @@ export const dCloudAssistant = () => (
     <Col md={3} className="sub-section"><h4>First Iteration</h4></Col>
     <Col md={8} className="sub-content"> 
     <h5 className="mb-3">Basic idea to get started</h5>
-    <p>User initiates the conversation by telling the bot what they want </p>
-    <p>The bot is smart in conversation by respondng like a human</p>
+    <p>User initiates the conversation by telling the bot what they want</p>
+    <p>The bot is smart in conversation, responding like a human</p>
     <img src={cbwire1} alt="Wireframe 1" className="img-fluid"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
       <li>+ Good to give option to type or speak</li>
       <li>+ Use of natural language by bot</li>
       <li>- Reponses from bot are too long</li>
-      <li>- Bot is not going to be that smart so we have to change how the responses work</li>
+      <li>- Bot’s lack of intelligence necessitates changing how the responses work</li>
     </ul>
      </Col>
   </Row>
@@ -172,8 +172,8 @@ export const dCloudAssistant = () => (
     <Col md={3} className="sub-section"><h4>Second Iteration</h4></Col>
     <Col md={8} className="sub-content"> 
     <h5 className="mb-3">Adding commands and reducing language complexity</h5>
-    <p>Main goal is to make interactions very simple with basic responses like yes/no so that it's easy to understand for the bot </p>
-    <p>The responses from the bot are simplified as we want to reduce time spent talking</p>
+    <p>Main goal is to simplify interactions to yes and no to facilitate the bot understanding. </p>
+    <p>The responses from the bot are simplified to reduce time spent talking.</p>
     <p>Introduction of tasks as commands</p>
     <img src={cbwire2} alt="Wireframe 2" className="img-fluid"/> 
     <p>Pros / Cons</p>
@@ -188,16 +188,15 @@ export const dCloudAssistant = () => (
   <Row className="sect-row">
     <Col md={3} className="sub-section"><h4>Third Iteration</h4></Col>
     <Col md={8} className="sub-content"> 
-    <h5 className="mb-3">Simplyfying Commands and responses</h5>
+    <h5 className="mb-3">Simplyfying commands and responses</h5>
     <p>Adding number value to tasks to make it fast and easy to respond </p>
-    <p>Introduce how a support agent enters the chat and takes over from bot</p>
+    <p>Introduce the way a support agent enters the chat and takes over from bot</p>
     <p>Introduction of tasks as commands</p>
     <img src={cbwire3} alt="Wireframe 3" className="img-fluid"/> 
     <p>Pros / Cons</p>
     <ul className="list-unstyled">
       <li>+ Number commands reduce times significantly</li>
       <li>+ Nice to have support agent take over</li>
-      <li>+ Recognition of? </li>
       <li>- Need to see interaction </li>
     </ul>
      </Col>
@@ -244,16 +243,17 @@ export const dCloudAssistant = () => (
  <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Thoughts</h3></Col>
     <Col md={8} className="sub-content">
-      <p>Designing the responses and nature of the bot was difficult so we realised going for a command based approach was probabky best</p>
-<p>We got feedback from the users  we spoke with initially who really liked our solution. </p>
+      <p>Designing the responses and the character of the bot was difficult. We decided that going for a command-based approach was the best option.</p>
+<p>We received feedback from the users we spoke with initially; they really liked our solution. </p>
 
     </Col>
     </Row>
     <Row className="sect-row">
     <Col md={3} className="sub-section"><h3 className="title-border">Future</h3></Col>
     <Col md={8} className="sub-content">
-      <p>In future it would be good to use the api in any messaging platform such as Whatsapp, Messenger, Webex etc so users don't need to download a separate app.</p>
-      <p>Perhaps integrating with Siri could potentially be very useful.</p>
+      <p>In future it would be good to use the API in any messaging platform such as Whatsapp, Messenger, 
+        Webex etc so users don't need to download a separate app</p>
+      <p>PIntegrating with Siri could be very useful.</p>
 
 
     </Col>
