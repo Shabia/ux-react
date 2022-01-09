@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import {Jumbotron, Row, Col, Card, CardDeck, Container } from 'react-bootstrap';
 
-
+import ai from './assets/AI.svg'
 import fr from './assets/FR.svg'
 import sc from './assets/SC.svg'
 import tb from './assets/TB.svg'
@@ -19,23 +19,55 @@ export const Home = () => (
       </Container>
  </Jumbotron>
 <Container>
+
+<CardDeck className="mb-4">
+<Card>
+<Link to="/port/CryptoAutoInvest">
+ <Card.Img src={ai} className="hp-card-img"/>
+ <Card.Body>
+
+  <Row>
+  <Col lg={7} ><Card.Title>Crypto Auto Invest</Card.Title>
+    </Col><Col lg={5} ><Card.Text>
+    <small className="text-muted">Mobile App - Crypto Invest</small>
+    </Card.Text></Col>
+  </Row>
+  </Card.Body>
+  </Link>
+</Card>
+<Card>
+<Link to="/port/TopologyBuilder">
+ <Card.Img src={tb} className="hp-card-img"/>
+ <Card.Body>
+
+  <Row>
+  <Col lg={5} ><Card.Title>Topology Builder</Card.Title>
+    </Col><Col lg={7} ><Card.Text>
+    <small className="text-muted">Software App - Computer Networking</small>
+    </Card.Text></Col>
+  </Row>
+  </Card.Body>
+  </Link>
+</Card>
+
+</CardDeck>
      
       <CardDeck className="mb-4">
-
-    <Card>
-    <Link to="/port/TopologyBuilder">
-     <Card.Img src={tb} className="hp-card-img"/>
+      <Card>
+    <Link to="/port/Scheduling">
+     <Card.Img src={sc}  alt="feature request" className="hp-card-img"/>
      <Card.Body>
     
       <Row>
-      <Col lg={5} ><Card.Title>Topology Builder</Card.Title>
+      <Col lg={5} ><Card.Title>Scheduling</Card.Title>
         </Col><Col lg={7} ><Card.Text>
-        <small className="text-muted">Software App - Computer Networking</small>
+        <small className="text-muted">Mobile App - Booking Calendar</small>
         </Card.Text></Col>
       </Row>
       </Card.Body>
       </Link>
     </Card>
+    
     <Card>
     <Link to="/port/dCloudAssistant">
      <Card.Img src={cb} className="hp-card-img"/>
@@ -53,20 +85,7 @@ export const Home = () => (
 </CardDeck>
 
 <CardDeck>
-<Card>
-    <Link to="/port/Scheduling">
-     <Card.Img src={sc}  alt="feature request" className="hp-card-img"/>
-     <Card.Body>
-    
-      <Row>
-      <Col lg={5} ><Card.Title>Scheduling</Card.Title>
-        </Col><Col lg={7} ><Card.Text>
-        <small className="text-muted">Mobile App - Booking Calendar</small>
-        </Card.Text></Col>
-      </Row>
-      </Card.Body>
-      </Link>
-    </Card>
+
 <Card>
     <Link to="/port/FeatureRequest">
      <Card.Img src={fr} className="hp-card-img" />
@@ -81,7 +100,20 @@ export const Home = () => (
       </Card.Body>
       </Link>
     </Card>
-
+    <Card>
+    <Link to="#">
+     <Card.Img src={sc}  alt="feature request" className="hp-card-img"/>
+     <Card.Body>
+    
+      <Row>
+      <Col lg={5} ><Card.Title>Coming Soon</Card.Title>
+        </Col><Col lg={7} ><Card.Text>
+        <small className="text-muted">Soon</small>
+        </Card.Text></Col>
+      </Row>
+      </Card.Body>
+      </Link>
+    </Card>
     
 </CardDeck>
      

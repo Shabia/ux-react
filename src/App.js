@@ -12,6 +12,7 @@ import { Scheduling } from './port/Scheduling';
 import { IconLibrary } from './port/IconLibrary';
 import { dCloudAssistant } from './port/dCloudAssistant';
 import { Documentation } from './port/Documentation';
+import { CryptoAutoInvest } from './port/CryptoAutoInvest';
 
 
 class App extends Component {
@@ -31,6 +32,7 @@ class App extends Component {
               <Route path="/port/IconLibrary" component={IconLibrary} />
               <Route path="/port/dCloudAssistant" component={dCloudAssistant} />
               <Route path="/port/Documentation" component={Documentation} />
+              <Route path="/port/CryptoAutoInvest" component={CryptoAutoInvest} />
               <Route component={NoMatch} />
             </Switch>
           </Layout>
