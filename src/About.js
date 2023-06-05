@@ -1,6 +1,8 @@
 import React from 'react'
 import {Jumbotron, Row, Col, Container} from 'react-bootstrap'
 import selfie from './assets/selfie.jpg'
+import selfie2 from './assets/selfie2.jpeg'
+import selfie3 from './assets/selfie3.jpeg'
 
 
 import Gallery from "react-photo-gallery";
@@ -25,7 +27,7 @@ export const About = () => (
               <p className="display-6 mb-0">Lurk a lot on  <a href="https://www.twitter.com/shabias">Twitter</a></p>
                <p className="display-6 mb-0">I do check  <a href="mailto:shabia@outlook.com">Emails</a></p>
           </Col>
-            <Col lg={4} className="d-flex align-items-center"> <img src={selfie} className="profile" alt="hp-bg" roundedCircle/> 
+            <Col lg={4} className="d-flex align-items-center"> <img src={selfie3} className="profile" alt="hp-bg" roundedCircle/> 
            </Col>
       </Row>
       </Container>
